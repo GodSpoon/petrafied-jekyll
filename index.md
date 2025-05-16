@@ -54,18 +54,17 @@ subtitle: Tattoo Artist | Fort Wayne, Indiana
     <div class="profile-card">
       <img src="{{ site.baseurl }}/assets/images/profile/PrimaryProfile.jpg" alt="Petra" class="profile-image">
       <div class="profile-info">
+<p class="profile-quote"><em>"Spiritually old, mentally unwell"</em></p>
         <h3>Petra (they/them)</h3>
         <p>Tattoo artist at <a href="https://www.instagram.com/thepaintedladyfw/" target="_blank">The Painted Lady</a> in Fort Wayne, Indiana.</p>
         <p>With 4 years of experience, I specialize in Illustrative, Cybercygilism, and Neo-Traditional tattoo styles.</p>
-        <p class="profile-quote"><em>"Spiritually old, mentally unwell"</em></p>
-        
         <h4 class="mt-3">Interests</h4>
         <ul class="list-unstyled">
           <li>Sea life knowledge</li>
           <li>Gay Vampires</li>
           <li>Antiques</li>
           <li>Baldurs Gate 3</li>
-          <li>Anti-government</li>
+          <li>~diet coke~</li>
         </ul>
         
         <div class="mt-3">
