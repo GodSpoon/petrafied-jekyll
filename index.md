@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Petrafied Ink
+title: petrafied.ink
 subtitle: Tattoo Artist | Fort Wayne, Indiana
 ---
 
 <div class="row">
   <div class="col-lg-8">
     <div class="welcome-section">
-      <h2>Welcome to Petrafied Ink</h2>
+      <h2>Welcome to petrafied.ink</h2>
       <p>I'm Petra (they/them), a tattoo artist based in Fort Wayne, Indiana, specializing in Illustrative, Cybercygilism, and Neo-Traditional styles.</p>
 
       <div class="buttons-container text-center my-4">
