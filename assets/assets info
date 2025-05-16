@@ -1,0 +1,30 @@
+assets                         # Central directory for static resources used across the project
+├── default_cursor.cur         # Default custom cursor used for general site interaction
+├── favicon.ico                # Favicon displayed in browser tabs for brand/site identity
+├── fonts                      # Custom and third-party fonts used for typography styling
+│   ├── BuilderSans-Light-300.otf        # Light weight of BuilderSans, for subtle text
+│   ├── BuilderSans-Medium-500.otf       # Medium weight of BuilderSans, for balanced body text
+│   ├── BuilderSans-SemiBold-600.otf     # Semi-bold weight of BuilderSans, for emphasized headings
+│   ├── Fredoka-Bold.ttf                 # Bold Fredoka font, likely used for playful headers
+│   ├── Fredoka-SemiBold.ttf            # Semi-bold Fredoka, used where bold is too heavy
+│   ├── MetalMania-Regular.ttf          # Stylized display font, likely for decorative titles
+│   ├── open-sans-600.ttf               # Open Sans bold (600), for general emphasis
+│   ├── open-sans-700.ttf               # Open Sans extra bold (700), for strong emphasis
+│   ├── open-sans-800.ttf               # Open Sans heavy (800), for titles or standout text
+│   ├── open-sans-v34-...regular.ttf    # Full character set of Open Sans, supports multiple languages
+│   └── Stylish-Regular.ttf            # Decorative or headline font for special styling
+├── images                     # All static image resources grouped by purpose
+│   ├── backgrounds            # Background images used in layouts or sections
+│   ├── brand_icons            # Logos and iconography related to other companies
+│   ├── favicon.ico           # Duplicate or alternate favicon for compatibility
+│   ├── gifs                   # Animated gifs for quirky oldschool internet elements and UI feedback
+│   ├── heart_favicon.png     # Alternate heart-themed favicon
+│   ├── heart_favicon_transparent.png  # Transparent version of heart favicon for theme support
+│   ├── memes                  # Humorous or informal images used for community engagement
+│   ├── petrafiedlogo.jpg     # Main logo image for "Petrafied" branding
+│   ├── portfolio              # Images for portfolio display or case studies
+│   └── profile                # profile pictures and about me pictures of Petra
+├── labubu.cur                # Alternate custom cursor (possibly themed or seasonal)
+├── tree                      # Placeholder or directory for site structure or JSON config
+└── videos
+    └── reels                 # Short-form video clips or highlight reels used for content display
