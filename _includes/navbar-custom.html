@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/images/petrafiedlogo.jpg" alt="Petrafied Ink" height="40" class="d-inline-block align-top me-2 rounded">
+      <img src="{{ site.baseurl }}/assets/images/petrafiedlogo.jpg" alt="Petrafied Ink" height="40" class="d-inline-block align-top me-2">
       Petrafied Ink
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,19 +11,29 @@
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">
+            <i class="fa fa-home"></i> Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/portfolio' or page.url contains '/portfolio/' %}active{% endif %}" href="{{ site.baseurl }}/portfolio">Portfolio</a>
+          <a class="nav-link {% if page.url contains '/portfolio' %}active{% endif %}" href="{{ site.baseurl }}/portfolio">
+            <i class="fa fa-image"></i> Portfolio
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/about' or page.url contains '/about/' %}active{% endif %}" href="{{ site.baseurl }}/about">About</a>
+          <a class="nav-link {% if page.url contains '/about' %}active{% endif %}" href="{{ site.baseurl }}/about">
+            <i class="fa fa-user"></i> About
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/booking' or page.url contains '/booking/' %}active{% endif %}" href="{{ site.baseurl }}/booking">Booking</a>
+          <a class="nav-link {% if page.url contains '/booking' %}active{% endif %}" href="{{ site.baseurl }}/booking">
+            <i class="fa fa-calendar"></i> Booking
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://tally.so/r/3yYpJ0" target="_blank">Appointment</a>
+          <a class="nav-link" href="https://tally.so/r/3yYpJ0" target="_blank">
+            <i class="fa fa-pencil-square-o"></i> Appointment
+          </a>
         </li>
       </ul>
     </div>
