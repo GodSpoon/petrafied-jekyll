@@ -1,13 +1,18 @@
 source "https://rubygems.org"
 
 # Jekyll dependencies
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.3.2"
 gem "minima", "~> 2.5"
 gem "webrick", "~> 1.7"
+
+# Use Dart Sass instead of LibSass (which has compatibility issues)
+gem "jekyll-sass-converter", "~> 3.0"
 
 # Required by Ruby 3.4.0+
 gem "csv"
 gem "logger"
+gem "bigdecimal"
+gem "base64"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.1"

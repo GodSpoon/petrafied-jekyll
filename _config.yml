@@ -3,7 +3,7 @@ title: Petrafied Ink
 description: Tattoo artistry by Petra (they/them)
 author: Petra
 baseurl: "" # the subpath of your site
-url: "https://pp.spoon.rip" # the base hostname & protocol
+url: "https://petrafied.ink" # the base hostname & protocol
 theme: minima
 
 # Build settings
