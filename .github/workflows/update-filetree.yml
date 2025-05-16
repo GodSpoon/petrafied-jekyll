@@ -1,0 +1,52 @@
+name: Update Filetree JSON
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'filetree.json'  # Avoid infinite loop by not triggering on filetree.json changes
+
+jobs:
+  update-filetree:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to push changes back to the repository
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Generate filetree.json
+        run: |
+          find . -type f -o -type d -not -path "*/\.*" | sort | python3 -c "
+          import sys, json, os
+
+          tree = {}
+          for line in sys.stdin:
+              path = line.strip()
+              if path == \".\": continue
+              
+              is_file = os.path.isfile(path)
+              parts = path[2:].split(\"/\")  # Remove ./ prefix
+              current = tree
+              
+              for i, part in enumerate(parts):
+                  is_last = i == len(parts) - 1
+                  
+                  if is_last and is_file:
+                      current[part] = 1  # Files as 1 to save tokens
+                  else:
+                      if part not in current:
+                          current[part] = {}
+                      current = current[part]
+
+          print(json.dumps(tree))
+          " > filetree.json
+      
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add filetree.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update filetree.json" && git push)

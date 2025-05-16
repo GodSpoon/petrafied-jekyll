@@ -1,6 +1,3 @@
-Now, here's a standalone script version you can use outside of `.zshrc`:
-
-```bash
 #!/bin/bash
 # filetree_json.sh - Generate a condensed JSON representation of directory structure
 # Usage: ./filetree_json.sh [output_file]
@@ -31,6 +28,6 @@ for line in sys.stdin:
             current = current[part]
 
 print(json.dumps(tree))
-" > "$OUTPUT_FILE"
+" >"$OUTPUT_FILE"
 
 echo "File tree JSON created at: $OUTPUT_FILE"
