@@ -1,50 +1,42 @@
-// Custom JS for Petrafied.ink
-
+// Theme switching functionality
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize lightbox
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'fadeDuration': 300,
-    'imageFadeDuration': 300,
-    'albumLabel': "Tattoo %1 of %2"
-  });
-  
-  // Add active class to current nav item
-  const currentLocation = window.location.pathname;
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-  
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (currentLocation === linkPath || 
-        (linkPath !== '/' && currentLocation.includes(linkPath))) {
-      link.classList.add('active');
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  const currentTheme = localStorage.getItem('theme');
+
+  // Check for saved user preference
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+      toggleSwitch.checked = true;
     }
-  });
-  
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 100,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  
-  // Add hover effects to gallery items
+  } else {
+    // Check for system preference
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleSwitch.checked = true;
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  // Switch theme function
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  // Add event listener for theme toggle
+  toggleSwitch.addEventListener('change', switchTheme, false);
+
+  // Add hover effects for gallery items
   const galleryItems = document.querySelectorAll('.gallery-item');
   galleryItems.forEach(item => {
     item.addEventListener('mouseenter', function() {
-      this.style.transform = 'scale(1.05)';
-    });
-    
-    item.addEventListener('mouseleave', function() {
-      this.style.transform = 'scale(1)';
+      // Add any additional hover effects here
     });
   });
 });
