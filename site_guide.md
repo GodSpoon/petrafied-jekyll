@@ -23,7 +23,7 @@
 ## Theme and Design
 - Use beautiful-jekyll theme as the foundation
 - Customize theme with the defined color palette
-- Maintain "edgy emo, modern & clean neocities" aesthetic
+- "Edgy, emo, 2000's internet nostalgia, modern neocities" aesthetic but in a modern context 
 - Include subtle Y2K elements (animated GIFs, starry backgrounds)
 - Add CSS-generated/animated texture background behind content
 - Use images from the assets/images directory for favicon and gallery
