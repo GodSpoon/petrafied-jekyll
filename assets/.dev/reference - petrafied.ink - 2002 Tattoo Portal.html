@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://petrafied.spoon.rip/ -->
+<html lang="en"><plasmo-csui><template shadowrootmode="open"><style>*,:before,:after{box-sizing:border-box;border:0 solid}:before,:after{--tw-content:""}html,:host{-webkit-text-size-adjust:100%;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent;font-family:jakarta,ui-sans-serif,system-ui;line-height:1.5}body{line-height:inherit;margin:0}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:normal;font-variation-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-feature-settings:inherit;font-variation-settings:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;background-color:#0000;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{margin:0;padding:0;list-style:none}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}[hidden]{display:none}@font-face{font-family:jakarta;font-weight:200;font-style:normal;src:url(PlusJakartaSans-ExtraLight.910e00a9.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:200;font-style:italic;src:url(PlusJakartaSans-ExtraLightItalic.4db0e375.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:300;font-style:normal;src:url(PlusJakartaSans-Light.73e6caf7.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:300;font-style:italic;src:url(PlusJakartaSans-LightItalic.6f8cf289.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:400;font-style:normal;src:url(PlusJakartaSans-Regular.dd2964fa.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:400;font-style:italic;src:url(PlusJakartaSans-Italic.6984abb6.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:500;font-style:normal;src:url(PlusJakartaSans-Medium.78ccad27.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:500;font-style:italic;src:url(PlusJakartaSans-MediumItalic.e19dc663.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:600;font-style:normal;src:url(PlusJakartaSans-SemiBold.86da44bd.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:600;font-style:italic;src:url(PlusJakartaSans-SemiBoldItalic.ab3b6f47.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:700;font-style:normal;src:url(PlusJakartaSans-Bold.df44d80d.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:700;font-style:italic;src:url(PlusJakartaSans-BoldItalic.a83919e3.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:800;font-style:normal;src:url(PlusJakartaSans-ExtraBold.37de6218.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:800;font-style:italic;src:url(PlusJakartaSans-ExtraBoldItalic.505495e3.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:400;font-style:normal;src:url(ListenUpTitle-Regular.327662cc.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:400;font-style:italic;src:url(ListenUpTitle-RegularItalic.6b265b9e.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:500;font-style:normal;src:url(ListenUpTitle-Medium.f7a3a490.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:500;font-style:italic;src:url(ListenUpTitle-MediumItalic.be652042.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:700;font-style:normal;src:url(ListenUpTitle-Bold.5a502535.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:700;font-style:italic;src:url(ListenUpTitle-BoldItalic.305edd8e.woff2)format("woff2")}*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.listenup-fixed{position:fixed}.listenup-absolute{position:absolute}.listenup-relative{position:relative}.listenup-inset-0{inset:0}.listenup-bottom-8{bottom:2rem}.listenup-left-0{left:0}.listenup-left-1\/2{left:50%}.listenup-left-8{left:2rem}.listenup-right-2{right:.5rem}.listenup-right-28{right:7rem}.listenup-top-0{top:0}.listenup-top-1\/2{top:50%}.listenup-top-2{top:.5rem}.listenup-top-5{top:1.25rem}.listenup-z-0{z-index:0}.listenup-z-10{z-index:10}.listenup-z-20{z-index:20}.listenup-z-40{z-index:40}.listenup-z-\[20\]{z-index:20}.listenup-z-\[30002\]{z-index:30002}.listenup-z-\[3000\]{z-index:3000}.listenup-m-1{margin:.25rem}.listenup-mx-auto{margin-left:auto;margin-right:auto}.listenup-my-4{margin-top:1rem;margin-bottom:1rem}.listenup-ml-2{margin-left:.5rem}.listenup-mt-8{margin-top:2rem}.listenup-inline-block{display:inline-block}.listenup-flex{display:flex}.listenup-hidden{display:none}.listenup-aspect-video{aspect-ratio:16/9}.listenup-h-10{height:2.5rem}.listenup-h-12{height:3rem}.listenup-h-16{height:4rem}.listenup-h-2{height:.5rem}.listenup-h-2\.5{height:.625rem}.listenup-h-28{height:7rem}.listenup-h-3{height:.75rem}.listenup-h-4{height:1rem}.listenup-h-5{height:1.25rem}.listenup-h-6{height:1.5rem}.listenup-h-7{height:1.75rem}.listenup-h-8{height:2rem}.listenup-h-9{height:2.25rem}.listenup-h-\[100\%\]{height:100%}.listenup-h-\[18px\]{height:18px}.listenup-h-\[1px\]{height:1px}.listenup-h-\[24px\]{height:24px}.listenup-h-fit{height:fit-content}.listenup-h-full{height:100%}.listenup-h-screen{height:100vh}.listenup-max-h-40{max-height:10rem}.listenup-max-h-60{max-height:15rem}.listenup-max-h-80{max-height:20rem}.listenup-max-h-\[30rem\]{max-height:30rem}.listenup-w-1\/2{width:50%}.listenup-w-10{width:2.5rem}.listenup-w-11{width:2.75rem}.listenup-w-12{width:3rem}.listenup-w-16{width:4rem}.listenup-w-2{width:.5rem}.listenup-w-2\.5{width:.625rem}.listenup-w-3{width:.75rem}.listenup-w-4{width:1rem}.listenup-w-40{width:10rem}.listenup-w-5{width:1.25rem}.listenup-w-6{width:1.5rem}.listenup-w-60{width:15rem}.listenup-w-7{width:1.75rem}.listenup-w-8{width:2rem}.listenup-w-80{width:20rem}.listenup-w-9{width:2.25rem}.listenup-w-\[100\%\]{width:100%}.listenup-w-\[18px\]{width:18px}.listenup-w-\[1px\]{width:1px}.listenup-w-\[30rem\]{width:30rem}.listenup-w-\[520px\]{width:520px}.listenup-w-\[60rem\]{width:60rem}.listenup-w-fit{width:fit-content}.listenup-w-full{width:100%}.listenup-w-screen{width:100vw}.listenup-min-w-\[11rem\]{min-width:11rem}.listenup-max-w-\[10rem\]{max-width:10rem}.listenup-max-w-\[90\%\]{max-width:90%}.listenup-flex-1{flex:1}.listenup-flex-shrink-0,.listenup-shrink-0{flex-shrink:0}.-listenup-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-rotate-90{--tw-rotate:-90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-rotate-\[135deg\]{--tw-rotate:-135deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.listenup-transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.listenup-cursor-pointer{cursor:pointer}.listenup-touch-none{touch-action:none}.listenup-select-none{user-select:none}.listenup-flex-col{flex-direction:column}.listenup-items-start{align-items:flex-start}.listenup-items-center{align-items:center}.listenup-justify-start{justify-content:flex-start}.listenup-justify-end{justify-content:flex-end}.listenup-justify-center{justify-content:center}.listenup-justify-between{justify-content:space-between}.listenup-gap-1{gap:.25rem}.listenup-gap-12{gap:3rem}.listenup-gap-2{gap:.5rem}.listenup-gap-20{gap:5rem}.listenup-gap-3{gap:.75rem}.listenup-gap-4{gap:1rem}.listenup-gap-6{gap:1.5rem}.listenup-gap-8{gap:2rem}.listenup-overflow-hidden{overflow:hidden}.listenup-truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.listenup-rounded{border-radius:.625rem}.listenup-rounded-2xl{border-radius:1rem}.listenup-rounded-\[inherit\]{border-radius:inherit}.listenup-rounded-full{border-radius:9999px}.listenup-rounded-md{border-radius:.375rem}.listenup-rounded-xl{border-radius:.75rem}.listenup-border{border-width:1px}.listenup-border-0{border-width:0}.listenup-border-1{border-width:1px}.listenup-border-2{border-width:2px}.listenup-border-4{border-width:4px}.listenup-border-\[1\.5px\]{border-width:1.5px}.listenup-border-\[2px\]{border-width:2px}.listenup-border-\[3\.64px\]{border-width:3.64px}.listenup-border-b-2{border-bottom-width:2px}.listenup-border-dashed{border-style:dashed}.listenup-border-danger-700{--tw-border-opacity:1;border-color:rgb(196 106 106/var(--tw-border-opacity))}.listenup-border-neutral-300{--tw-border-opacity:1;border-color:rgb(234 234 234/var(--tw-border-opacity))}.listenup-border-neutral-400{--tw-border-opacity:1;border-color:rgb(204 204 204/var(--tw-border-opacity))}.listenup-border-neutral-500{--tw-border-opacity:1;border-color:rgb(163 163 163/var(--tw-border-opacity))}.listenup-border-neutral-600{--tw-border-opacity:1;border-color:rgb(97 97 98/var(--tw-border-opacity))}.listenup-border-neutral-700{--tw-border-opacity:1;border-color:rgb(36 36 37/var(--tw-border-opacity))}.listenup-border-primary-500{--tw-border-opacity:1;border-color:rgb(193 190 250/var(--tw-border-opacity))}.listenup-border-primary-700{--tw-border-opacity:1;border-color:rgb(61 58 121/var(--tw-border-opacity))}.listenup-bg-\[\#FF8181\]{--tw-bg-opacity:1;background-color:rgb(255 129 129/var(--tw-bg-opacity))}.listenup-bg-danger-200{--tw-bg-opacity:1;background-color:rgb(253 202 202/var(--tw-bg-opacity))}.listenup-bg-danger-500{--tw-bg-opacity:1;background-color:rgb(255 103 103/var(--tw-bg-opacity))}.listenup-bg-neutral-100{--tw-bg-opacity:1;background-color:rgb(249 249 249/var(--tw-bg-opacity))}.listenup-bg-neutral-200{--tw-bg-opacity:1;background-color:rgb(246 246 246/var(--tw-bg-opacity))}.listenup-bg-neutral-300{--tw-bg-opacity:1;background-color:rgb(234 234 234/var(--tw-bg-opacity))}.listenup-bg-neutral-400{--tw-bg-opacity:1;background-color:rgb(204 204 204/var(--tw-bg-opacity))}.listenup-bg-neutral-50{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.listenup-bg-neutral-700{--tw-bg-opacity:1;background-color:rgb(36 36 37/var(--tw-bg-opacity))}.listenup-bg-neutral-700\/80{background-color:#242425cc}.listenup-bg-primary-200{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.listenup-bg-primary-300{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.listenup-bg-primary-500{--tw-bg-opacity:1;background-color:rgb(193 190 250/var(--tw-bg-opacity))}.listenup-bg-primary-600{--tw-bg-opacity:1;background-color:rgb(112 111 165/var(--tw-bg-opacity))}.listenup-bg-secondary-300{--tw-bg-opacity:1;background-color:rgb(251 213 112/var(--tw-bg-opacity))}.listenup-fill-neutral-100{fill:#f9f9f9}.listenup-stroke-danger-500{stroke:#ff6767}.listenup-stroke-neutral-50{stroke:#fff}.listenup-stroke-neutral-600{stroke:#616162}.listenup-stroke-neutral-700{stroke:#242425}.listenup-stroke-primary-100{stroke:#f8f8ff}.listenup-stroke-primary-600{stroke:#706fa5}.listenup-stroke-primary-700{stroke:#3d3a79}.listenup-stroke-2{stroke-width:2px}.listenup-stroke-\[1\.5px\]{stroke-width:1.5px}.listenup-stroke-\[3\]{stroke-width:3px}.listenup-stroke-\[4px\]{stroke-width:4px}.listenup-p-0{padding:0}.listenup-p-0\.5{padding:.125rem}.listenup-p-1{padding:.25rem}.listenup-p-2{padding:.5rem}.listenup-p-3{padding:.75rem}.listenup-p-4{padding:1rem}.listenup-p-6{padding:1.5rem}.listenup-px-1{padding-left:.25rem;padding-right:.25rem}.listenup-px-10{padding-left:2.5rem;padding-right:2.5rem}.listenup-px-2{padding-left:.5rem;padding-right:.5rem}.listenup-px-2\.5{padding-left:.625rem;padding-right:.625rem}.listenup-px-20{padding-left:5rem;padding-right:5rem}.listenup-px-3{padding-left:.75rem;padding-right:.75rem}.listenup-px-4{padding-left:1rem;padding-right:1rem}.listenup-px-5{padding-left:1.25rem;padding-right:1.25rem}.listenup-px-6{padding-left:1.5rem;padding-right:1.5rem}.listenup-px-\[3px\]{padding-left:3px;padding-right:3px}.listenup-py-0{padding-top:0;padding-bottom:0}.listenup-py-1{padding-top:.25rem;padding-bottom:.25rem}.listenup-py-2{padding-top:.5rem;padding-bottom:.5rem}.listenup-py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.listenup-py-20{padding-top:5rem;padding-bottom:5rem}.listenup-py-3{padding-top:.75rem;padding-bottom:.75rem}.listenup-py-4{padding-top:1rem;padding-bottom:1rem}.listenup-py-5{padding-top:1.25rem;padding-bottom:1.25rem}.listenup-py-8{padding-top:2rem;padding-bottom:2rem}.listenup-text-left{text-align:left}.listenup-text-center{text-align:center}.listenup-font-sans{font-family:jakarta,ui-sans-serif,system-ui}.listenup-text-base{font-size:1rem;line-height:1.5rem}.listenup-text-lg{font-size:1.125rem;line-height:1.75rem}.listenup-text-xs{font-size:.75rem;line-height:1rem}.listenup-font-bold{font-weight:700}.listenup-font-medium{font-weight:500}.listenup-leading-4{line-height:1rem}.listenup-text-danger-500{--tw-text-opacity:1;color:rgb(255 103 103/var(--tw-text-opacity))}.listenup-text-neutral-50{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.listenup-text-neutral-500{--tw-text-opacity:1;color:rgb(163 163 163/var(--tw-text-opacity))}.listenup-text-neutral-600{--tw-text-opacity:1;color:rgb(97 97 98/var(--tw-text-opacity))}.listenup-text-neutral-700{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity))}.listenup-text-primary-600{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}.listenup-text-primary-700{--tw-text-opacity:1;color:rgb(61 58 121/var(--tw-text-opacity))}.listenup-opacity-0{opacity:0}.listenup-opacity-100{opacity:1}.listenup-opacity-60{opacity:.6}.listenup-shadow-2xl{--tw-shadow:0 25px 50px -12px #00000040;--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-shadow-smooth{--tw-shadow:0px 4px 4px 0px #0000000d;--tw-shadow-colored:0px 4px 4px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-shadow-smoothxl{--tw-shadow:0px 7.27px 7.27px 0px #0003;--tw-shadow-colored:0px 7.27px 7.27px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-outline-none{outline-offset:2px;outline:2px solid #0000}.listenup-outline-neutral-700{outline-color:#242425}.listenup-transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.listenup-transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.listenup-duration-150{transition-duration:.15s}.listenup-ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}ul{padding-left:1.5em;list-style-type:disc}ol{padding-left:1.5em;list-style-type:decimal}ul li{margin-bottom:10px}*,:before,:after{box-sizing:border-box}*{margin:0}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-optical-sizing:auto;text-rendering:optimizeLegibility;font-synthesis:none}img,picture,video,canvas,svg{max-width:100%;display:block}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}*,button{outline-color:#c1befa}h1,.h1{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:listenup-title,jakarta,ui-sans-serif,system-ui;font-size:1.875rem;font-weight:700;line-height:2.5rem}h2,.h2{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:listenup-title,jakarta,ui-sans-serif,system-ui;font-size:1.5rem;font-weight:700;line-height:2rem}h3,.h3{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:1.125rem;font-weight:700;line-height:1.5rem}h4,.h4{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:1rem;font-weight:600;line-height:1.5rem}h5,.h5{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.875rem;font-weight:600;line-height:1.5rem}body,p,.p{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.875rem;font-weight:500;line-height:1.5rem}.text-small{--tw-text-opacity:1;color:rgb(97 97 98/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.75rem;font-weight:500;line-height:1.25}::selection{--tw-bg-opacity:1;background-color:rgb(253 238 165/var(--tw-bg-opacity))}a{--tw-text-opacity:1;color:rgb(61 58 121/var(--tw-text-opacity));font-weight:500;text-decoration-line:none;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.2s;transition-timing-function:cubic-bezier(.4,0,.2,1)}a:hover{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}a:focus-visible{--tw-shadow:0 0 0 1px #c1befa;--tw-shadow-colored:0 0 0 1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);outline-offset:2px;border-radius:4px;outline:2px solid #0000}a:active{--tw-text-opacity:1;color:rgb(193 190 250/var(--tw-text-opacity))}a:visited{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}p a{text-decoration-line:none}p a:hover{--tw-border-opacity:1;border-color:rgb(112 111 165/var(--tw-border-opacity))}input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}.react-player{border-radius:.625rem;padding-top:56.25%;position:relative;overflow:hidden}.react-player>div{position:absolute}input:-webkit-autofill{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:hover{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:focus{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:active{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}[contentEditable="true"]:focus{outline-offset:2px;outline:2px solid #0000}body ::-webkit-scrollbar{background-color:#0000;width:6px;height:8px}body ::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px;transition:background-color .2s}body ::-webkit-scrollbar-track{background:0 0;margin:4px}.tiptap p.is-editor-empty:first-child:before{color:#adb5bd;content:attr(data-placeholder);float:left;pointer-events:none;height:0}blockquote{border-left:2px solid #a3a3a3;margin:1rem 0;padding:0 .75rem;font-style:italic}.tiptap{& code{color:#fff;background:#242425;border-radius:.5rem;padding:.25rem .5rem;font-family:JetBrainsMono,monospace}& pre{color:#fff;background:#242425;border-radius:.5rem;margin:1rem 0;padding:.5rem .75rem;font-family:JetBrainsMono,monospace;& code{color:inherit;background:0 0;padding:0;font-size:.8rem}& .hljs-comment,& .hljs-quote{color:#616161}& .hljs-variable,& .hljs-template-variable,& .hljs-attribute,& .hljs-tag,& .hljs-regexp,& .hljs-link,& .hljs-name,& .hljs-selector-id,& .hljs-selector-class{color:#f98181}& .hljs-number,& .hljs-meta,& .hljs-built_in,& .hljs-builtin-name,& .hljs-literal,& .hljs-type,& .hljs-params{color:#fbbc88}& .hljs-string,& .hljs-symbol,& .hljs-bullet{color:#b9f18d}& .hljs-title,& .hljs-section{color:#faf594}& .hljs-keyword,& .hljs-selector-tag{color:#70cff8}& .hljs-emphasis{font-style:italic}& .hljs-strong{font-weight:700}}}grammarly-desktop-integration,grammarly-extension,.grammarly-inline-card,.grammarly-popups,.grammarly-ghost,div[data-grammarly-part=highlights],div[class*=grammarly]{display:none!important}[contenteditable=true],textarea,input{data-gramm:false!important;data-gramm_editor:false!important;data-enable-grammarly:false!important;-webkit-user-modify:read-write!important}.grammarly-inline-button,.grammarly-button{display:none!important}.hover\:listenup-h-3:hover{height:.75rem}.hover\:listenup-h-3\.5:hover{height:.875rem}.hover\:listenup-w-3:hover{width:.75rem}.hover\:listenup-w-3\.5:hover{width:.875rem}.hover\:listenup-cursor-pointer:hover{cursor:pointer}.hover\:listenup-bg-neutral-100:hover{--tw-bg-opacity:1;background-color:rgb(249 249 249/var(--tw-bg-opacity))}.hover\:listenup-bg-neutral-200:hover{--tw-bg-opacity:1;background-color:rgb(246 246 246/var(--tw-bg-opacity))}.hover\:listenup-bg-neutral-300\/70:hover{background-color:#eaeaeab3}.hover\:listenup-bg-neutral-400:hover{--tw-bg-opacity:1;background-color:rgb(204 204 204/var(--tw-bg-opacity))}.hover\:listenup-bg-primary-200:hover{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.hover\:listenup-bg-primary-300:hover{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.hover\:listenup-opacity-100:hover{opacity:1}.focus\:listenup-bg-primary-200:focus{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.focus\:listenup-bg-primary-300:focus{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.\[\&\>div\]\:\!listenup-block>div{display:block!important}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"><div class="listenup-h-fit listenup-w-fit"></div></div></div></template></plasmo-csui><plasmo-csui><template shadowrootmode="open"><style>*,:before,:after{box-sizing:border-box;border:0 solid}:before,:after{--tw-content:""}html,:host{-webkit-text-size-adjust:100%;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent;font-family:jakarta,ui-sans-serif,system-ui;line-height:1.5}body{line-height:inherit;margin:0}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:normal;font-variation-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-feature-settings:inherit;font-variation-settings:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;background-color:#0000;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{margin:0;padding:0;list-style:none}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}[hidden]{display:none}@font-face{font-family:jakarta;font-weight:200;font-style:normal;src:url(PlusJakartaSans-ExtraLight.910e00a9.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:200;font-style:italic;src:url(PlusJakartaSans-ExtraLightItalic.4db0e375.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:300;font-style:normal;src:url(PlusJakartaSans-Light.73e6caf7.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:300;font-style:italic;src:url(PlusJakartaSans-LightItalic.6f8cf289.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:400;font-style:normal;src:url(PlusJakartaSans-Regular.dd2964fa.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:400;font-style:italic;src:url(PlusJakartaSans-Italic.6984abb6.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:500;font-style:normal;src:url(PlusJakartaSans-Medium.78ccad27.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:500;font-style:italic;src:url(PlusJakartaSans-MediumItalic.e19dc663.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:600;font-style:normal;src:url(PlusJakartaSans-SemiBold.86da44bd.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:600;font-style:italic;src:url(PlusJakartaSans-SemiBoldItalic.ab3b6f47.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:700;font-style:normal;src:url(PlusJakartaSans-Bold.df44d80d.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:700;font-style:italic;src:url(PlusJakartaSans-BoldItalic.a83919e3.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:800;font-style:normal;src:url(PlusJakartaSans-ExtraBold.37de6218.woff2)format("woff2")}@font-face{font-family:jakarta;font-weight:800;font-style:italic;src:url(PlusJakartaSans-ExtraBoldItalic.505495e3.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:400;font-style:normal;src:url(ListenUpTitle-Regular.327662cc.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:400;font-style:italic;src:url(ListenUpTitle-RegularItalic.6b265b9e.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:500;font-style:normal;src:url(ListenUpTitle-Medium.f7a3a490.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:500;font-style:italic;src:url(ListenUpTitle-MediumItalic.be652042.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:700;font-style:normal;src:url(ListenUpTitle-Bold.5a502535.woff2)format("woff2")}@font-face{font-family:listenup-title;font-weight:700;font-style:italic;src:url(ListenUpTitle-BoldItalic.305edd8e.woff2)format("woff2")}*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.listenup-fixed{position:fixed}.listenup-absolute{position:absolute}.listenup-relative{position:relative}.listenup-inset-0{inset:0}.listenup-bottom-8{bottom:2rem}.listenup-left-0{left:0}.listenup-left-1\/2{left:50%}.listenup-left-8{left:2rem}.listenup-right-2{right:.5rem}.listenup-right-28{right:7rem}.listenup-top-0{top:0}.listenup-top-1\/2{top:50%}.listenup-top-2{top:.5rem}.listenup-top-5{top:1.25rem}.listenup-z-0{z-index:0}.listenup-z-10{z-index:10}.listenup-z-20{z-index:20}.listenup-z-40{z-index:40}.listenup-z-\[20\]{z-index:20}.listenup-z-\[30002\]{z-index:30002}.listenup-z-\[3000\]{z-index:3000}.listenup-m-1{margin:.25rem}.listenup-mx-auto{margin-left:auto;margin-right:auto}.listenup-my-4{margin-top:1rem;margin-bottom:1rem}.listenup-ml-2{margin-left:.5rem}.listenup-mt-8{margin-top:2rem}.listenup-inline-block{display:inline-block}.listenup-flex{display:flex}.listenup-hidden{display:none}.listenup-aspect-video{aspect-ratio:16/9}.listenup-h-10{height:2.5rem}.listenup-h-12{height:3rem}.listenup-h-16{height:4rem}.listenup-h-2{height:.5rem}.listenup-h-2\.5{height:.625rem}.listenup-h-28{height:7rem}.listenup-h-3{height:.75rem}.listenup-h-4{height:1rem}.listenup-h-5{height:1.25rem}.listenup-h-6{height:1.5rem}.listenup-h-7{height:1.75rem}.listenup-h-8{height:2rem}.listenup-h-9{height:2.25rem}.listenup-h-\[100\%\]{height:100%}.listenup-h-\[18px\]{height:18px}.listenup-h-\[1px\]{height:1px}.listenup-h-\[24px\]{height:24px}.listenup-h-fit{height:fit-content}.listenup-h-full{height:100%}.listenup-h-screen{height:100vh}.listenup-max-h-40{max-height:10rem}.listenup-max-h-60{max-height:15rem}.listenup-max-h-80{max-height:20rem}.listenup-max-h-\[30rem\]{max-height:30rem}.listenup-w-1\/2{width:50%}.listenup-w-10{width:2.5rem}.listenup-w-11{width:2.75rem}.listenup-w-12{width:3rem}.listenup-w-16{width:4rem}.listenup-w-2{width:.5rem}.listenup-w-2\.5{width:.625rem}.listenup-w-3{width:.75rem}.listenup-w-4{width:1rem}.listenup-w-40{width:10rem}.listenup-w-5{width:1.25rem}.listenup-w-6{width:1.5rem}.listenup-w-60{width:15rem}.listenup-w-7{width:1.75rem}.listenup-w-8{width:2rem}.listenup-w-80{width:20rem}.listenup-w-9{width:2.25rem}.listenup-w-\[100\%\]{width:100%}.listenup-w-\[18px\]{width:18px}.listenup-w-\[1px\]{width:1px}.listenup-w-\[30rem\]{width:30rem}.listenup-w-\[520px\]{width:520px}.listenup-w-\[60rem\]{width:60rem}.listenup-w-fit{width:fit-content}.listenup-w-full{width:100%}.listenup-w-screen{width:100vw}.listenup-min-w-\[11rem\]{min-width:11rem}.listenup-max-w-\[10rem\]{max-width:10rem}.listenup-max-w-\[90\%\]{max-width:90%}.listenup-flex-1{flex:1}.listenup-flex-shrink-0,.listenup-shrink-0{flex-shrink:0}.-listenup-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-rotate-90{--tw-rotate:-90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.-listenup-rotate-\[135deg\]{--tw-rotate:-135deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.listenup-transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.listenup-cursor-pointer{cursor:pointer}.listenup-touch-none{touch-action:none}.listenup-select-none{user-select:none}.listenup-flex-col{flex-direction:column}.listenup-items-start{align-items:flex-start}.listenup-items-center{align-items:center}.listenup-justify-start{justify-content:flex-start}.listenup-justify-end{justify-content:flex-end}.listenup-justify-center{justify-content:center}.listenup-justify-between{justify-content:space-between}.listenup-gap-1{gap:.25rem}.listenup-gap-12{gap:3rem}.listenup-gap-2{gap:.5rem}.listenup-gap-20{gap:5rem}.listenup-gap-3{gap:.75rem}.listenup-gap-4{gap:1rem}.listenup-gap-6{gap:1.5rem}.listenup-gap-8{gap:2rem}.listenup-overflow-hidden{overflow:hidden}.listenup-truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.listenup-rounded{border-radius:.625rem}.listenup-rounded-2xl{border-radius:1rem}.listenup-rounded-\[inherit\]{border-radius:inherit}.listenup-rounded-full{border-radius:9999px}.listenup-rounded-md{border-radius:.375rem}.listenup-rounded-xl{border-radius:.75rem}.listenup-border{border-width:1px}.listenup-border-0{border-width:0}.listenup-border-1{border-width:1px}.listenup-border-2{border-width:2px}.listenup-border-4{border-width:4px}.listenup-border-\[1\.5px\]{border-width:1.5px}.listenup-border-\[2px\]{border-width:2px}.listenup-border-\[3\.64px\]{border-width:3.64px}.listenup-border-b-2{border-bottom-width:2px}.listenup-border-dashed{border-style:dashed}.listenup-border-danger-700{--tw-border-opacity:1;border-color:rgb(196 106 106/var(--tw-border-opacity))}.listenup-border-neutral-300{--tw-border-opacity:1;border-color:rgb(234 234 234/var(--tw-border-opacity))}.listenup-border-neutral-400{--tw-border-opacity:1;border-color:rgb(204 204 204/var(--tw-border-opacity))}.listenup-border-neutral-500{--tw-border-opacity:1;border-color:rgb(163 163 163/var(--tw-border-opacity))}.listenup-border-neutral-600{--tw-border-opacity:1;border-color:rgb(97 97 98/var(--tw-border-opacity))}.listenup-border-neutral-700{--tw-border-opacity:1;border-color:rgb(36 36 37/var(--tw-border-opacity))}.listenup-border-primary-500{--tw-border-opacity:1;border-color:rgb(193 190 250/var(--tw-border-opacity))}.listenup-border-primary-700{--tw-border-opacity:1;border-color:rgb(61 58 121/var(--tw-border-opacity))}.listenup-bg-\[\#FF8181\]{--tw-bg-opacity:1;background-color:rgb(255 129 129/var(--tw-bg-opacity))}.listenup-bg-danger-200{--tw-bg-opacity:1;background-color:rgb(253 202 202/var(--tw-bg-opacity))}.listenup-bg-danger-500{--tw-bg-opacity:1;background-color:rgb(255 103 103/var(--tw-bg-opacity))}.listenup-bg-neutral-100{--tw-bg-opacity:1;background-color:rgb(249 249 249/var(--tw-bg-opacity))}.listenup-bg-neutral-200{--tw-bg-opacity:1;background-color:rgb(246 246 246/var(--tw-bg-opacity))}.listenup-bg-neutral-300{--tw-bg-opacity:1;background-color:rgb(234 234 234/var(--tw-bg-opacity))}.listenup-bg-neutral-400{--tw-bg-opacity:1;background-color:rgb(204 204 204/var(--tw-bg-opacity))}.listenup-bg-neutral-50{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.listenup-bg-neutral-700{--tw-bg-opacity:1;background-color:rgb(36 36 37/var(--tw-bg-opacity))}.listenup-bg-neutral-700\/80{background-color:#242425cc}.listenup-bg-primary-200{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.listenup-bg-primary-300{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.listenup-bg-primary-500{--tw-bg-opacity:1;background-color:rgb(193 190 250/var(--tw-bg-opacity))}.listenup-bg-primary-600{--tw-bg-opacity:1;background-color:rgb(112 111 165/var(--tw-bg-opacity))}.listenup-bg-secondary-300{--tw-bg-opacity:1;background-color:rgb(251 213 112/var(--tw-bg-opacity))}.listenup-fill-neutral-100{fill:#f9f9f9}.listenup-stroke-danger-500{stroke:#ff6767}.listenup-stroke-neutral-50{stroke:#fff}.listenup-stroke-neutral-600{stroke:#616162}.listenup-stroke-neutral-700{stroke:#242425}.listenup-stroke-primary-100{stroke:#f8f8ff}.listenup-stroke-primary-600{stroke:#706fa5}.listenup-stroke-primary-700{stroke:#3d3a79}.listenup-stroke-2{stroke-width:2px}.listenup-stroke-\[1\.5px\]{stroke-width:1.5px}.listenup-stroke-\[3\]{stroke-width:3px}.listenup-stroke-\[4px\]{stroke-width:4px}.listenup-p-0{padding:0}.listenup-p-0\.5{padding:.125rem}.listenup-p-1{padding:.25rem}.listenup-p-2{padding:.5rem}.listenup-p-3{padding:.75rem}.listenup-p-4{padding:1rem}.listenup-p-6{padding:1.5rem}.listenup-px-1{padding-left:.25rem;padding-right:.25rem}.listenup-px-10{padding-left:2.5rem;padding-right:2.5rem}.listenup-px-2{padding-left:.5rem;padding-right:.5rem}.listenup-px-2\.5{padding-left:.625rem;padding-right:.625rem}.listenup-px-20{padding-left:5rem;padding-right:5rem}.listenup-px-3{padding-left:.75rem;padding-right:.75rem}.listenup-px-4{padding-left:1rem;padding-right:1rem}.listenup-px-5{padding-left:1.25rem;padding-right:1.25rem}.listenup-px-6{padding-left:1.5rem;padding-right:1.5rem}.listenup-px-\[3px\]{padding-left:3px;padding-right:3px}.listenup-py-0{padding-top:0;padding-bottom:0}.listenup-py-1{padding-top:.25rem;padding-bottom:.25rem}.listenup-py-2{padding-top:.5rem;padding-bottom:.5rem}.listenup-py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.listenup-py-20{padding-top:5rem;padding-bottom:5rem}.listenup-py-3{padding-top:.75rem;padding-bottom:.75rem}.listenup-py-4{padding-top:1rem;padding-bottom:1rem}.listenup-py-5{padding-top:1.25rem;padding-bottom:1.25rem}.listenup-py-8{padding-top:2rem;padding-bottom:2rem}.listenup-text-left{text-align:left}.listenup-text-center{text-align:center}.listenup-font-sans{font-family:jakarta,ui-sans-serif,system-ui}.listenup-text-base{font-size:1rem;line-height:1.5rem}.listenup-text-lg{font-size:1.125rem;line-height:1.75rem}.listenup-text-xs{font-size:.75rem;line-height:1rem}.listenup-font-bold{font-weight:700}.listenup-font-medium{font-weight:500}.listenup-leading-4{line-height:1rem}.listenup-text-danger-500{--tw-text-opacity:1;color:rgb(255 103 103/var(--tw-text-opacity))}.listenup-text-neutral-50{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.listenup-text-neutral-500{--tw-text-opacity:1;color:rgb(163 163 163/var(--tw-text-opacity))}.listenup-text-neutral-600{--tw-text-opacity:1;color:rgb(97 97 98/var(--tw-text-opacity))}.listenup-text-neutral-700{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity))}.listenup-text-primary-600{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}.listenup-text-primary-700{--tw-text-opacity:1;color:rgb(61 58 121/var(--tw-text-opacity))}.listenup-opacity-0{opacity:0}.listenup-opacity-100{opacity:1}.listenup-opacity-60{opacity:.6}.listenup-shadow-2xl{--tw-shadow:0 25px 50px -12px #00000040;--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-shadow-smooth{--tw-shadow:0px 4px 4px 0px #0000000d;--tw-shadow-colored:0px 4px 4px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-shadow-smoothxl{--tw-shadow:0px 7.27px 7.27px 0px #0003;--tw-shadow-colored:0px 7.27px 7.27px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.listenup-outline-none{outline-offset:2px;outline:2px solid #0000}.listenup-outline-neutral-700{outline-color:#242425}.listenup-transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.listenup-transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.listenup-duration-150{transition-duration:.15s}.listenup-ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}ul{padding-left:1.5em;list-style-type:disc}ol{padding-left:1.5em;list-style-type:decimal}ul li{margin-bottom:10px}*,:before,:after{box-sizing:border-box}*{margin:0}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-optical-sizing:auto;text-rendering:optimizeLegibility;font-synthesis:none}img,picture,video,canvas,svg{max-width:100%;display:block}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}*,button{outline-color:#c1befa}h1,.h1{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:listenup-title,jakarta,ui-sans-serif,system-ui;font-size:1.875rem;font-weight:700;line-height:2.5rem}h2,.h2{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:listenup-title,jakarta,ui-sans-serif,system-ui;font-size:1.5rem;font-weight:700;line-height:2rem}h3,.h3{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:1.125rem;font-weight:700;line-height:1.5rem}h4,.h4{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:1rem;font-weight:600;line-height:1.5rem}h5,.h5{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.875rem;font-weight:600;line-height:1.5rem}body,p,.p{--tw-text-opacity:1;color:rgb(36 36 37/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.875rem;font-weight:500;line-height:1.5rem}.text-small{--tw-text-opacity:1;color:rgb(97 97 98/var(--tw-text-opacity));font-family:jakarta,ui-sans-serif,system-ui;font-size:.75rem;font-weight:500;line-height:1.25}::selection{--tw-bg-opacity:1;background-color:rgb(253 238 165/var(--tw-bg-opacity))}a{--tw-text-opacity:1;color:rgb(61 58 121/var(--tw-text-opacity));font-weight:500;text-decoration-line:none;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.2s;transition-timing-function:cubic-bezier(.4,0,.2,1)}a:hover{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}a:focus-visible{--tw-shadow:0 0 0 1px #c1befa;--tw-shadow-colored:0 0 0 1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);outline-offset:2px;border-radius:4px;outline:2px solid #0000}a:active{--tw-text-opacity:1;color:rgb(193 190 250/var(--tw-text-opacity))}a:visited{--tw-text-opacity:1;color:rgb(112 111 165/var(--tw-text-opacity))}p a{text-decoration-line:none}p a:hover{--tw-border-opacity:1;border-color:rgb(112 111 165/var(--tw-border-opacity))}input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}.react-player{border-radius:.625rem;padding-top:56.25%;position:relative;overflow:hidden}.react-player>div{position:absolute}input:-webkit-autofill{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:hover{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:focus{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}input:-webkit-autofill:active{-webkit-text-fill-color:#000;-webkit-background-clip:text;transition:background-color 5000s ease-in-out;box-shadow:inset 0 0 20px 20px #f8f8ff}[contentEditable="true"]:focus{outline-offset:2px;outline:2px solid #0000}body ::-webkit-scrollbar{background-color:#0000;width:6px;height:8px}body ::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px;transition:background-color .2s}body ::-webkit-scrollbar-track{background:0 0;margin:4px}.tiptap p.is-editor-empty:first-child:before{color:#adb5bd;content:attr(data-placeholder);float:left;pointer-events:none;height:0}blockquote{border-left:2px solid #a3a3a3;margin:1rem 0;padding:0 .75rem;font-style:italic}.tiptap{& code{color:#fff;background:#242425;border-radius:.5rem;padding:.25rem .5rem;font-family:JetBrainsMono,monospace}& pre{color:#fff;background:#242425;border-radius:.5rem;margin:1rem 0;padding:.5rem .75rem;font-family:JetBrainsMono,monospace;& code{color:inherit;background:0 0;padding:0;font-size:.8rem}& .hljs-comment,& .hljs-quote{color:#616161}& .hljs-variable,& .hljs-template-variable,& .hljs-attribute,& .hljs-tag,& .hljs-regexp,& .hljs-link,& .hljs-name,& .hljs-selector-id,& .hljs-selector-class{color:#f98181}& .hljs-number,& .hljs-meta,& .hljs-built_in,& .hljs-builtin-name,& .hljs-literal,& .hljs-type,& .hljs-params{color:#fbbc88}& .hljs-string,& .hljs-symbol,& .hljs-bullet{color:#b9f18d}& .hljs-title,& .hljs-section{color:#faf594}& .hljs-keyword,& .hljs-selector-tag{color:#70cff8}& .hljs-emphasis{font-style:italic}& .hljs-strong{font-weight:700}}}grammarly-desktop-integration,grammarly-extension,.grammarly-inline-card,.grammarly-popups,.grammarly-ghost,div[data-grammarly-part=highlights],div[class*=grammarly]{display:none!important}[contenteditable=true],textarea,input{data-gramm:false!important;data-gramm_editor:false!important;data-enable-grammarly:false!important;-webkit-user-modify:read-write!important}.grammarly-inline-button,.grammarly-button{display:none!important}.hover\:listenup-h-3:hover{height:.75rem}.hover\:listenup-h-3\.5:hover{height:.875rem}.hover\:listenup-w-3:hover{width:.75rem}.hover\:listenup-w-3\.5:hover{width:.875rem}.hover\:listenup-cursor-pointer:hover{cursor:pointer}.hover\:listenup-bg-neutral-100:hover{--tw-bg-opacity:1;background-color:rgb(249 249 249/var(--tw-bg-opacity))}.hover\:listenup-bg-neutral-200:hover{--tw-bg-opacity:1;background-color:rgb(246 246 246/var(--tw-bg-opacity))}.hover\:listenup-bg-neutral-300\/70:hover{background-color:#eaeaeab3}.hover\:listenup-bg-neutral-400:hover{--tw-bg-opacity:1;background-color:rgb(204 204 204/var(--tw-bg-opacity))}.hover\:listenup-bg-primary-200:hover{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.hover\:listenup-bg-primary-300:hover{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.hover\:listenup-opacity-100:hover{opacity:1}.focus\:listenup-bg-primary-200:focus{--tw-bg-opacity:1;background-color:rgb(242 241 255/var(--tw-bg-opacity))}.focus\:listenup-bg-primary-300:focus{--tw-bg-opacity:1;background-color:rgb(236 235 253/var(--tw-bg-opacity))}.\[\&\>div\]\:\!listenup-block>div{display:block!important}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>~*~* Petrafied.ink - Y2K Tattoo Portal *~*~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Petra&#39;s Tattoo Art Studio - Book appointments and explore tattoo art in Y2K style!">
+  
+  <!-- Custom Y2K styling -->
+  <link rel="stylesheet" href="./reference - petrafied.ink - 2002 Tattoo Portal_files/y2k-style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/gif" href="https://petrafied.spoon.rip/images/petrafiedlogo.jpg">
+</head>
+
+<body>
+  <!-- Starry background effect -->
+  <div class="stars"></div>
+  
+  <div class="page-container">
+    <!-- Top Banner -->
+    <div class="top-banner">
+      <marquee scrollamount="3" behavior="alternate">
+        <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/clovers.gif" alt="clover" height="20">
+        <span class="rainbow-text">★彡 Welcome to Petrafied.ink - Tattoo Artist Extraordinaire! 彡★</span>
+        <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/clovers.gif" alt="clover" height="20">
+      </marquee>
+    </div>
+    
+    <!-- Page counter -->
+    <div class="counter-box">
+      <span>Tattoo Lovers Visiting: </span>
+      <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/999999th-visitor.gif" alt="Visitor counter">
+    </div>
+    
+    <!-- Main Layout - Flexbox instead of table -->
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Profile Section -->
+        <div class="profile-box">
+          <div class="profile-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="stars">
+            <span>Artist Profile</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="stars">
+          </div>
+          <div class="profile-content">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/firefoxgirl.png" alt="Petra&#39;s avatar" class="avatar">
+            <div class="profile-text">
+              <div class="name-container">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/sparkles.gif" alt="sparkle" class="sparkle">
+                <h1 class="username">~*~Petra~*~</h1>
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/sparkles.gif" alt="sparkle" class="sparkle">
+              </div>
+              <div class="status-box">
+                <marquee scrollamount="2">
+                  ★ Tattoo Artist ★ They/Them ★ Pisces ♓ ★
+                </marquee>
+              </div>
+              <p class="mood">Currently: Taking Bookings 💉</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Music Player -->
+        <div class="music-player">
+          <div class="player-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/music.gif" alt="music note">
+            <span>Studio Playlist</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/music.gif" alt="music note">
+          </div>
+          <div class="player-content">
+            <p>▶️ "Ink My Whole Body" - Wiz Khalifa</p>
+            <div class="volume-bar">
+              <span>Volume: </span>
+              <div class="volume-level">
+                <div class="volume-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Me -->
+        <div class="about-me">
+          <div class="about-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/Heart.png" alt="heart">
+            <span>About Petra</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/Heart.png" alt="heart">
+          </div>
+          <div class="about-content">
+            <p>Pronouns: They/Them</p>
+            <p>Location: Indianapolis, IN</p>
+            <p>Specialties: Neo-traditional, Blackwork</p>
+            <p>Studio: Private Studio</p>
+            <p>Sign: ♓ Pisces</p>
+            <p>Experience: 8+ Years</p>
+          </div>
+        </div>
+        
+        <!-- Booking Info -->
+        <div class="booking-info">
+          <div class="booking-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/computer_65.gif" alt="calendar">
+            <span>Booking Info</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/computer_65.gif" alt="calendar">
+          </div>
+          <div class="booking-content">
+            <p>⚡ Consultation required first</p>
+            <p>⚡ Deposit for all bookings</p>
+            <p>⚡ 48hr cancellation policy</p>
+            <p>⚡ No copying other artists!</p>
+            <p>⚡ Open Wed-Sat 12-8pm</p>
+          </div>
+        </div>
+        
+        <!-- Random Banner -->
+        <div class="random-banner sidebar-banner">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/bizarread.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="welcome-banner">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/wow.jpg" alt="Welcome to Petrafied.ink">
+        </div>
+        
+        <div class="guestbook-banner">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/heart.gif" alt="star" class="banner-star">
+          <p>❤️ Your skin is my canvas, let's create art together! ❤️</p>
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/heart.gif" alt="star" class="banner-star">
+        </div>
+        
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+          <div class="section-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/paint-colors.gif" alt="needle">
+            <span>Tattoo Portfolio</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/paint-colors.gif" alt="needle">
+          </div>
+          
+          <div class="portfolio-container">
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/shmegl.jpg" alt="Tattoo 1">
+              <div class="portfolio-hover">Neo-Traditional</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/mudkipz.png" alt="Tattoo 2">
+              <div class="portfolio-hover">Color Work</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/wow.jpg" alt="Tattoo 3">
+              <div class="portfolio-hover">Blackwork</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/shmegl.jpg" alt="Tattoo 4">
+              <div class="portfolio-hover">Traditional</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/mudkipz.png" alt="Tattoo 5">
+              <div class="portfolio-hover">Flash Design</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/wow.jpg" alt="Tattoo 6">
+              <div class="portfolio-hover">Custom Work</div>
+            </div>
+          </div>
+          
+          <div class="portfolio-button">
+            <a href="https://petrafied.spoon.rip/#" class="button-link" target="_blank">
+              <div class="y2k-button portfolio-more">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/favorite.gif" alt="More tattoos">
+                <span>See Full Portfolio</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="links-section">
+          <div class="section-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/computer_65.gif" alt="star">
+            <span>Book &amp; Connect</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/computer_65.gif" alt="star">
+          </div>
+          
+          <div class="buttons-container">
+            <!-- Booking Button -->
+            <a href="https://calendly.com/" class="button-link" target="_blank">
+              <div class="y2k-button booking">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/calendly.svg" alt="Booking">
+                <span>Book Consultation</span>
+              </div>
+            </a>
+            
+            <!-- Instagram Button -->
+            <a href="https://instagram.com/" class="button-link" target="_blank">
+              <div class="y2k-button instagram">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/instagram.svg" alt="Instagram">
+                <span>Instagram</span>
+              </div>
+            </a>
+            
+            <!-- TikTok Button -->
+            <a href="https://tiktok.com/" class="button-link" target="_blank">
+              <div class="y2k-button tiktok">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/tiktok.svg" alt="TikTok">
+                <span>TikTok</span>
+              </div>
+            </a>
+            
+            <!-- Spotify Button -->
+            <a href="https://spotify.com/" class="button-link" target="_blank">
+              <div class="y2k-button spotify">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/spotify.svg" alt="Spotify">
+                <span>Studio Playlist</span>
+              </div>
+            </a>
+            
+            <!-- Email Button -->
+            <a href="mailto:info@petrafied.ink" class="button-link">
+              <div class="y2k-button email">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/email.svg" alt="Email">
+                <span>Email Me</span>
+              </div>
+            </a>
+            
+            <!-- Form Button -->
+            <a href="https://petrafied.spoon.rip/#" class="button-link" target="_blank">
+              <div class="y2k-button form">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/notebook.gif" alt="Tattoo Form">
+                <span>Tattoo Request Form</span>
+              </div>
+            </a>
+            
+            <!-- Aftercare Button -->
+            <a href="https://petrafied.spoon.rip/#" class="button-link" target="_blank">
+              <div class="y2k-button aftercare">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/bottle.gif" alt="Aftercare">
+                <span>Aftercare Guide</span>
+              </div>
+            </a>
+            
+            <!-- Shop Button -->
+            <a href="https://petrafied.spoon.rip/#" class="button-link" target="_blank">
+              <div class="y2k-button shop">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/shop.svg" alt="Shop">
+                <span>Merch Shop</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+          <div class="section-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/planetheart.gif" alt="review">
+            <span>Happy Clients</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/planetheart.gif" alt="review">
+          </div>
+          <div class="reviews-container">
+            <div class="review">
+              <div class="review-stars">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+              </div>
+              <p class="review-text">"Petra is amazing! They designed the most beautiful floral piece for my arm. Super professional and made me feel so comfortable!"</p>
+              <p class="review-author">- Jessie K.</p>
+            </div>
+            <div class="review">
+              <div class="review-stars">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/star109.gif" alt="star">
+              </div>
+              <p class="review-text">"Been getting tattooed by Petra for 3 years now. They're the only artist I trust. Worth every penny and the wait!"</p>
+              <p class="review-author">- Mike T.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <div class="section-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/splash1.gif" alt="question">
+            <span>FAQ</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/splash1.gif" alt="question">
+          </div>
+          <div class="faq-content">
+            <div class="faq-item">
+              <div class="faq-question">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/splash2.gif" alt="bullet">
+                How much do you charge?
+              </div>
+              <div class="faq-answer">
+                I have a $150 minimum, with larger pieces priced by size, detail, and placement. Consultations are free!
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/splash2.gif" alt="bullet">
+                Do you do walk-ins?
+              </div>
+              <div class="faq-answer">
+                Occasionally! Follow my Instagram for walk-in day announcements.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mini Buttons Section -->
+        <div class="mini-buttons-section">
+          <div class="section-header">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/heart.gif" alt="heart">
+            <span>Y2K Buttons</span>
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/heart.gif" alt="heart">
+          </div>
+          <div class="mini-buttons-container">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/kawaii.gif" alt="kawaii">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/rainbow.gif" alt="rainbow">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/they.png" alt="pronouns">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/blink.gif" alt="blink">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/hearts.gif" alt="hearts">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/space.gif" alt="space">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/bi.png" alt="bi">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/animefreak.gif" alt="anime">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/pictochat.gif" alt="chat">
+            <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/winamp5.gif" alt="music">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Sidebar (ads, etc.) -->
+      <div class="right-sidebar">
+        <div class="side-ad">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/bonus_ringtone.gif" alt="Y2K style ad">
+          <p>advertise with us</p>
+        </div>
+        
+        <div class="random-banner sidebar-banner">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/kimpossible.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+        
+        <div class="random-banner sidebar-banner">
+          <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/bizarread.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Flash Designs Banner -->
+    <div class="flash-banner">
+      <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/xpload.gif" alt="Flash Designs">
+      <span>Flash designs available - Book quick before they're gone!</span>
+      <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/xpload.gif" alt="Flash Designs">
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="divider">
+        <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/barbed wire.gif" alt="divider" width="100%">
+      </div>
+      <p class="footer-text">
+        © 2025 Petrafied.ink • Made with <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/heartfelt.gif" alt="heart" height="20"> • Best viewed with Internet Explorer 6.0
+      </p>
+      <p class="disclaimer">
+        <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/slime.gif" alt="rainbow line" class="rainbow-line">
+        <br>
+        All tattoo designs and artwork are property of Petra
+        <br>
+        Website powered by <a href="https://littlelink.io/" target="_blank">LittleLink</a>
+        <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/slime.gif" alt="rainbow line" class="rainbow-line">
+      </p>
+    </div>
+  </div>
+
+  <!-- Fixed y2k elements -->
+  <div class="fixed-elements">
+    <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/cursorheart.gif" alt="cursor trail" class="cursor-trail">
+    <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/angel1.gif" alt="angel" class="butterfly">
+    <img src="./reference - petrafied.ink - 2002 Tattoo Portal_files/networx.gif" alt="network" class="butterfly butterfly-2">
+  </div>
+  
+  <!-- Play MIDI music -->
+  <audio id="y2k-music" autoplay="" loop="">
+    <source src="sounds/background.mid" type="audio/midi">
+  </audio>
+  
+  <!-- Mobile Menu Toggle -->
+  <div class="mobile-menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  
+  <script type="text/javascript">
+    // Mobile menu toggle functionality
+    document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+      document.querySelector('.sidebar').classList.toggle('show-mobile');
+    });
+    
+    // Random Y2K banners from new collection
+    const banners = [
+      'images/graphix/banners/bizarread.gif',
+      'images/graphix/banners/freeemoticons.gif', 
+      'images/graphix/banners/crazy_frog.gif',
+      'images/graphix/banners/enlargeyourguineapig.gif',
+      'images/graphix/banners/findthequeen.gif',
+      'images/graphix/banners/kimpossible.gif',
+      'images/graphix/banners/msn.gif',
+      'images/graphix/banners/nokia.gif',
+      'images/graphix/banners/smileysad.gif'
+    ];
+    
+    const randomBanners = document.querySelectorAll('.y2k-banner');
+    randomBanners.forEach(banner => {
+      const randomIndex = Math.floor(Math.random() * banners.length);
+      banner.src = banners[randomIndex];
+    });
+  </script>
+
+  
+</body></html>
