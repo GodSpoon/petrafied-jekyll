@@ -1,8 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+# Jekyll dependencies
+gem "jekyll", "~> 4.2.2"
 gem "minima", "~> 2.5"
 gem "webrick", "~> 1.7"
+
+# Required by Ruby 3.4.0+
+gem "csv"
+gem "logger"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.1"
