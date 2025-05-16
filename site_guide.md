@@ -106,6 +106,7 @@ assets                         # Central directory for static resources used acr
 ├── tree                      # Placeholder or directory for site structure or JSON config
 └── videos
     └── reels                 # Short-form video clips or highlight reels used for content display
+    └── misc                  # Other, currently contains meme videos for use later
 ```
 
 ## Functionality
