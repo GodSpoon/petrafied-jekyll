@@ -1,42 +1,32 @@
-// Theme switching functionality
+// Custom JavaScript for the Petrafied.ink website
+
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  const currentTheme = localStorage.getItem('theme');
-
-  // Check for saved user preference
-  if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') {
-      toggleSwitch.checked = true;
-    }
-  } else {
-    // Check for system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      toggleSwitch.checked = true;
-      localStorage.setItem('theme', 'dark');
-    }
-  }
-
-  // Switch theme function
-  function switchTheme(e) {
-    if (e.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
-    }
-  }
-
-  // Add event listener for theme toggle
-  toggleSwitch.addEventListener('change', switchTheme, false);
-
-  // Add hover effects for gallery items
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  galleryItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
-      // Add any additional hover effects here
+  // Initialize the Bootstrap carousel with a 5 second interval
+  var carousel = new bootstrap.Carousel(document.getElementById('featuredWorkCarousel'), {
+    interval: 5000,
+    wrap: true
+  });
+  
+  // Handle custom cursor behavior
+  document.body.style.cursor = "url('/assets/labubu.cur'), auto";
+  
+  // Add hover effects to social buttons
+  const socialButtons = document.querySelectorAll('.social-btn');
+  socialButtons.forEach(button => {
+    button.addEventListener('mouseenter', function() {
+      this.style.transform = 'scale(1.05)';
+    });
+    button.addEventListener('mouseleave', function() {
+      this.style.transform = 'scale(1)';
+    });
+  });
+  
+  // Add lightbox functionality for portfolio gallery
+  const portfolioImages = document.querySelectorAll('.gallery-item a');
+  portfolioImages.forEach(image => {
+    image.addEventListener('click', function(e) {
+      // Lightbox is initialized through the included lightbox library
+      // This is just for any additional custom behavior
     });
   });
 });

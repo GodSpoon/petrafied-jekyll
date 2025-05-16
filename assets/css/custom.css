@@ -1,237 +1,219 @@
+/* Main Site Styles */
 :root {
-  /* Base theme colors */
   --tropical-indigo: #9882d9;
   --gunmetal: #2a2d34;
   --white: #fefcfd;
-
-  /* Light theme (default) */
-  --bg-color: var(--white);
-  --text-color: var(--gunmetal);
-  --accent-color: var(--tropical-indigo);
-  --header-bg: rgba(255, 255, 255, 0.8);
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --border-color: rgba(42, 45, 52, 0.2);
-
-  /* Background opacity */
-  --bg-opacity: 0.06;
-  --content-bg-opacity: 0.95;
+  --purple-light: rgba(152, 130, 217, 0.7);
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Dark theme variables */
-[data-theme="dark"] {
-  --bg-color: #151519;
-  --text-color: #eaeaea;
-  --accent-color: var(--tropical-indigo);
-  --header-bg: rgba(25, 25, 30, 0.8);
-  --card-bg: rgba(35, 35, 40, 0.9);
-  --border-color: rgba(152, 130, 217, 0.3);
-
-  /* Background opacity for dark mode */
-  --bg-opacity: 0.03;
-  --content-bg-opacity: 0.92;
-}
-
-/* Global styles */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'BuilderSans-Medium', sans-serif;
+  font-family: sans-serif;
+  background-color: var(--gunmetal);
+  background-image: url('/assets/images/backgrounds/water.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: url('/assets/labubu.cur'), auto;
+}
+
+/* Custom cursor scaled down to 25% */
+body, a, button {
+  cursor: url('/assets/labubu.cur') 4 4, auto !important;
+}
+
+/* Main container styling */
+.container {
   position: relative;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Background image */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: url('../images/backgrounds/checkered.gif');
-  background-repeat: repeat;
-  background-size: 200px;
-  opacity: var(--bg-opacity);
-  filter: contrast(0.8) brightness(0.7);
-  transition: opacity 0.3s ease;
-}
-
-/* Main content container */
 .main-content {
-  background-color: rgba(var(--bg-color-rgb), var(--content-bg-opacity));
-  backdrop-filter: blur(5px);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 1.5rem auto;
+  background-color: var(--purple-light);
   padding: 2rem;
-  position: relative;
-  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'MetalMania-Regular', 'BuilderSans-SemiBold', sans-serif;
-  margin-bottom: 1rem;
-  color: var(--accent-color);
-}
-
-/* Theme switcher */
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.theme-switch {
-  display: inline-block;
-  height: 24px;
-  position: relative;
-  width: 48px;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: white;
-  bottom: 4px;
-  content: "";
-  height: 16px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 16px;
-}
-
-input:checked + .slider {
-  background-color: var(--accent-color);
-}
-
-input:checked + .slider:before {
-  transform: translateX(24px);
-}
-
-.slider.round {
-  border-radius: 26px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* Y2K Divider */
-.y2k-divider {
-  height: 4px;
-  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-  margin: 1.5rem 0;
-  position: relative;
-}
-
-.y2k-divider::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-}
-
-/* Navbar */
+/* Navbar styling */
 .navbar {
-  background-color: var(--header-bg);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
-  transition: background-color 0.3s ease;
+  background-color: var(--gunmetal);
+  border-bottom: 3px solid var(--tropical-indigo);
 }
 
 .navbar-brand img {
-  transition: filter 0.3s ease;
+  height: 60px !important;
+  margin-right: 10px;
 }
 
-[data-theme="light"] .navbar-brand .logo-dark {
-  display: none;
+/* Profile section styling */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-[data-theme="dark"] .navbar-brand .logo-light {
-  display: none;
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--tropical-indigo);
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* Portfolio gallery */
+.profile-info h3 {
+  color: var(--white);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.profile-quote {
+  font-style: italic;
+  color: var(--white);
+  margin: 0.5rem 0;
+}
+
+/* Social links styling */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: var(--tropical-indigo);
+  color: var(--white);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--gunmetal);
+  color: var(--white);
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Featured Work Carousel */
+.featured-work {
+  margin: 2rem 0;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--gunmetal);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Y2K Decorative Elements */
+.y2k-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--tropical-indigo), transparent);
+  margin: 1.5rem 0;
+}
+
+.side-gifs {
+  position: fixed;
+  z-index: -1;
+}
+
+.side-gifs.left {
+  left: 10px;
+  top: 40%;
+}
+
+.side-gifs.right {
+  right: 10px;
+  top: 40%;
+}
+
+.side-gifs img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Portfolio gallery styling */
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 15px;
   margin-top: 2rem;
 }
 
 .gallery-item {
   overflow: hidden;
-  border: 2px solid var(--border-color);
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
 .gallery-item:hover {
-  transform: scale(1.02);
-  border-color: var(--accent-color);
+  transform: scale(1.03);
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.05);
+/* Footer styling */
+footer {
+  background-color: var(--gunmetal);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 3px solid var(--tropical-indigo);
 }
 
-/* Custom Cursor */
-html {
-  cursor: url('../default_cursor.cur'), auto;
-}
-
-a, button, .btn, [role="button"] {
-  cursor: url('../labubu.cur'), pointer;
-}
-
-/* Page transitions */
-.page-transition {
-  animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Buttons */
-.btn-primary {
-  background-color: var(--accent-color);
-  border: none;
-  color: white;
-  font-family: 'BuilderSans-SemiBold', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 0.5rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #8571c8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .side-gifs {
+    display: none;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+  }
+  
+  .carousel-item img {
+    height: 300px;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-btn {
+    width: 80%;
+  }
 }

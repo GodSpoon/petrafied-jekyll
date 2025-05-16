@@ -1,20 +1,33 @@
 <div class="featured-work">
-  <h2>Featured Work</h2>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_1.jpg" alt="Tattoo work by Petra">
+  <h2 class="text-center">Featured Work</h2>
+  <div class="y2k-divider"></div>
+  
+  <div id="featuredWorkCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      {% for i in (1..8) %}
+        <button type="button" data-bs-target="#featuredWorkCarousel" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
+      {% endfor %}
     </div>
-    <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_2.jpg" alt="Tattoo work by Petra">
+    
+    <div class="carousel-inner">
+      {% for i in (1..8) %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_{{ i }}.jpg" class="d-block w-100" alt="Tattoo work by Petra">
+        </div>
+      {% endfor %}
     </div>
-    <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_3.jpg" alt="Tattoo work by Petra">
-    </div>
-    <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_4.jpg" alt="Tattoo work by Petra">
-    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#featuredWorkCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featuredWorkCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <p class="text-center mt-4">
-    <a href="/portfolio" class="btn btn-primary">See Full Portfolio</a>
-  </p>
+  
+  <div class="text-center mt-4">
+    <a href="{{ site.baseurl }}/portfolio" class="social-btn">View Full Portfolio</a>
+  </div>
 </div>
