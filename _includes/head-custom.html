@@ -1,0 +1,29 @@
+<!-- Custom head content for Petrafied.ink -->
+
+<!-- Custom fonts -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/images/heart_favicon.png' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/images/heart_favicon_transparent.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+
+<!-- Lightbox for portfolio -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+<!-- Custom JavaScript -->
+<script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Meta tags for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#9882d9">
+
+<!-- Open Graph tags -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:image" content="{{ '/assets/images/petrafiedlogo.jpg' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:type" content="website">

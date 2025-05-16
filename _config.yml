@@ -1,0 +1,40 @@
+# Site settings
+title: Petrafied Ink
+description: Tattoo artistry by Petra (they/them)
+author: Petra
+baseurl: "" # the subpath of your site
+url: "https://pp.spoon.rip" # the base hostname & protocol
+theme: minima
+
+# Build settings
+markdown: kramdown
+permalink: /:year-:month-:day-:title/
+paginate: 5
+timezone: "America/Indiana/Indianapolis"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+
+# Social media links
+twitter_username: 
+instagram_username: shmegl
+facebook_username: shmeagl
+tiktok_username: shmegl
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
