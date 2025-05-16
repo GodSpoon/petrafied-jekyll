@@ -1,32 +1,41 @@
-// Custom JavaScript for the Petrafied.ink website
+// Custom JavaScript for Petrafied.ink
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize the Bootstrap carousel with a 5 second interval
-  var carousel = new bootstrap.Carousel(document.getElementById('featuredWorkCarousel'), {
-    interval: 5000,
-    wrap: true
+  // Initialize lightbox
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': "Image %1 of %2",
+    'fadeDuration': 300
   });
   
-  // Handle custom cursor behavior
-  document.body.style.cursor = "url('/assets/labubu.cur'), auto";
+  // Add active class to current nav item
+  const currentLocation = window.location.pathname;
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
   
-  // Add hover effects to social buttons
-  const socialButtons = document.querySelectorAll('.social-btn');
-  socialButtons.forEach(button => {
-    button.addEventListener('mouseenter', function() {
-      this.style.transform = 'scale(1.05)';
-    });
-    button.addEventListener('mouseleave', function() {
-      this.style.transform = 'scale(1)';
-    });
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentLocation || (currentLocation.includes(linkPath) && linkPath !== '/')) {
+      link.classList.add('active');
+    }
   });
   
-  // Add lightbox functionality for portfolio gallery
-  const portfolioImages = document.querySelectorAll('.gallery-item a');
-  portfolioImages.forEach(image => {
-    image.addEventListener('click', function(e) {
-      // Lightbox is initialized through the included lightbox library
-      // This is just for any additional custom behavior
-    });
-  });
+  // Y2K animated elements
+  const addRandomStars = () => {
+    const mainContent = document.querySelector('.main-content');
+    if (!mainContent) return;
+    
+    // Add some random star elements
+    for (let i = 0; i < 5; i++) {
+      const star = document.createElement('span');
+      star.classList.add('y2k-star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDelay = `${Math.random() * 5}s`;
+      mainContent.appendChild(star);
+    }
+  };
+  
+  // Call function to add stars
+  addRandomStars();
 });

@@ -3,17 +3,13 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-12">
-    {% include profile-section.html %}
-    
-    <div class="intro-header">
+  <div class="col-lg-10 col-md-12 mx-auto">
+    <div class="intro-header text-center">
       <h1>{{ page.title }}</h1>
       <h2 class="subtitle">{{ page.subtitle }}</h2>
       <div class="y2k-divider"></div>
     </div>
     
     {{ content }}
-    
-    {% include featured-work.html %}
   </div>
 </div>

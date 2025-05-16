@@ -1,6 +1,6 @@
 # Site settings
 title: Petrafied Ink
-description: Tattoo artistry by Petra (they/them)
+description: Tattoo artistry by Petra (they/them) in Fort Wayne, Indiana
 author: Petra
 baseurl: "" # the subpath of your site
 url: "https://petrafied.ink" # the base hostname & protocol
@@ -9,7 +9,7 @@ theme: minima
 # Build settings
 markdown: kramdown
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 9
 timezone: "America/Indiana/Indianapolis"
 
 # Plugins
@@ -26,15 +26,26 @@ exclude:
   - vendor
   - .git
   - .github
+  - README.md
+  - chrisbobbe_jekyll-theme-prologue.md
+  - cotes2020_jekyll-theme-chirpy.md
+  - daattali_beautiful-jekyll.md
+  - piharpi_jekyll-klise.md
+  - site_guide.md
+  - filetree.json
 
 # Social media links
-twitter_username: 
-instagram_username: shmegl
-facebook_username: shmeagl
-tiktok_username: shmegl
+social:
+  instagram: https://www.instagram.com/shmegl/
+  tiktok: https://www.tiktok.com/@shmegl
+  facebook: https://www.facebook.com/shmeagl
+  venmo: https://account.venmo.com/u/sikorskip
+  email: petrafied@thepaintedladyfw.com
 
-# Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
+# Custom settings
+appointment_url: https://tally.so/r/3yYpJ0
+shop_name: The Painted Lady
+shop_location: Fort Wayne, Indiana
+shop_map: https://maps.app.goo.gl/APDiCzUPpAnmppW98
+shop_instagram: thepaintedladyfw
+important_website: https://cat-bounce.com/

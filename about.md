@@ -35,7 +35,9 @@ subtitle: Get to know Petra
     <div class="row">
       {% for i in (1..7) %}
         <div class="col-md-4 mb-4">
-          <img src="{{ site.baseurl }}/assets/images/profile/about_me_{{ i }}.jpg" alt="About Petra" class="img-fluid rounded">
+          <a href="{{ site.baseurl }}/assets/images/profile/about_me_{{ i }}.jpg" data-lightbox="about-gallery" data-title="About Petra">
+            <img src="{{ site.baseurl }}/assets/images/profile/about_me_{{ i }}.jpg" alt="About Petra" class="img-fluid rounded">
+          </a>
         </div>
       {% endfor %}
     </div>

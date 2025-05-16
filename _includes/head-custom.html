@@ -3,46 +3,6 @@
 <!-- Custom fonts -->
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
-<!-- Preload custom fonts -->
-<link rel="preload" href="{{ '/assets/fonts/MetalMania-Regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="{{ '/assets/fonts/BuilderSans-Medium-500.otf' | relative_url }}" as="font" type="font/otf" crossorigin>
-<link rel="preload" href="{{ '/assets/fonts/BuilderSans-SemiBold-600.otf' | relative_url }}" as="font" type="font/otf" crossorigin>
-
-<!-- Font definitions -->
-<style>
-  @font-face {
-    font-family: 'MetalMania-Regular';
-    src: url('{{ "/assets/fonts/MetalMania-Regular.ttf" | relative_url }}') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'BuilderSans-Light';
-    src: url('{{ "/assets/fonts/BuilderSans-Light-300.otf" | relative_url }}') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'BuilderSans-Medium';
-    src: url('{{ "/assets/fonts/BuilderSans-Medium-500.otf" | relative_url }}') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'BuilderSans-SemiBold';
-    src: url('{{ "/assets/fonts/BuilderSans-SemiBold-600.otf" | relative_url }}') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-</style>
-
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 <link rel="icon" type="image/png" href="{{ '/assets/images/heart_favicon.png' | relative_url }}">
@@ -50,6 +10,9 @@
 
 <!-- Lightbox for portfolio -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+<!-- Custom JavaScript -->
+<script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
 
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -64,3 +27,38 @@
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:image" content="{{ '/assets/images/petrafiedlogo.jpg' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:type" content="website">
+
+<!-- Font Face Declarations -->
+<style>
+  @font-face {
+    font-family: 'BuilderSans-Light';
+    src: url('{{ site.baseurl }}/assets/fonts/BuilderSans-Light-300.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'BuilderSans-Medium';
+    src: url('{{ site.baseurl }}/assets/fonts/BuilderSans-Medium-500.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'BuilderSans-SemiBold';
+    src: url('{{ site.baseurl }}/assets/fonts/BuilderSans-SemiBold-600.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Fredoka-Bold';
+    src: url('{{ site.baseurl }}/assets/fonts/Fredoka-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
