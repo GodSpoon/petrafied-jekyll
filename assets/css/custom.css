@@ -1,5 +1,9 @@
 /* Petrafied.ink Custom CSS */
 
+/* ---------- Font Imports ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* ---------- Color Variables ---------- */
 :root {
   --tropical-indigo: #9882d9;
@@ -8,6 +12,12 @@
   --white: #fefcfd;
   --light-purple: #b5a6e4;
   --dark-purple: #6a5ba5;
+
+  /* Font Variables */
+  --body-font: 'Montserrat', sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
+  --title-font: 'Fredoka-Bold', 'BuilderSans-SemiBold', sans-serif;
+  --pixel-font: 'Press Start 2P', cursive;
 }
 
 /* ---------- General Styles ---------- */
@@ -16,7 +26,8 @@
 }
 
 body {
-  font-family: 'BuilderSans-Medium', 'Open Sans', sans-serif;
+  font-family: var(--body-font);
+  font-weight: 400;
   background-color: var(--gunmetal);
   color: var(--white);
   background-image: url('/assets/images/backgrounds/cycles.gif');
@@ -47,14 +58,29 @@ body {
 
 /* ---------- Typography ---------- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fredoka-Bold', 'BuilderSans-SemiBold', sans-serif;
+  font-family: var(--heading-font);
+  font-weight: 700;
   color: var(--white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Keep the title using the original font */
+h1.site-title {
+  font-family: var(--title-font);
+}
+
 .subtitle {
-  font-family: 'BuilderSans-Light', sans-serif;
+  font-family: var(--body-font);
+  font-weight: 300;
   color: var(--light-purple);
+}
+
+/* Pixelated font elements */
+.pixel-text {
+  font-family: var(--pixel-font);
+  font-size: 0.8em;
+  letter-spacing: -0.05em;
+  line-height: 1.5;
 }
 
 /* ---------- Layout Components ---------- */
@@ -127,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 30%;
 }
 
-/* Profile Card */
+/* Profile Card - Using Pixelated Font for About Me Section */
 .profile-card {
   background-color: rgba(42, 45, 52, 0.8);
   border-radius: 12px;
@@ -156,11 +182,25 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white);
 }
 
+.profile-info h2 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.profile-info .about-me {
+  font-family: var(--pixel-font);
+  font-size: 0.7em;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
 .profile-quote {
+  font-family: var(--pixel-font);
   font-style: italic;
   margin-top: 0.5rem;
   color: var(--light-purple);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 /* ---------- Navigation ---------- */
@@ -174,7 +214,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white);
-  font-family: 'BuilderSans-SemiBold', sans-serif;
+  font-family: var(--body-font);
+  font-weight: 600;
   padding: 0.5rem 1rem;
   margin: 0 0.25rem;
   transition: all 0.3s ease;
@@ -199,13 +240,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------- Buttons & Links ---------- */
 .btn {
-  font-family: 'BuilderSans-SemiBold', sans-serif;
+  font-family: var(--body-font);
+  font-weight: 600;
   padding: 0.5rem 1.25rem;
   border-radius: 50px;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Pixelated buttons for special elements */
+.btn-pixel {
+  font-family: var(--pixel-font);
+  font-size: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  letter-spacing: 0;
 }
 
 .btn-primary {
@@ -306,6 +356,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
+.gallery-slider .caption {
+  font-family: var(--pixel-font);
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  background-color: rgba(42, 45, 52, 0.8);
+}
+
 .gallery-slider .prev,
 .gallery-slider .next {
   cursor: pointer;
@@ -370,6 +427,14 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
+.gallery-item .item-title {
+  font-family: var(--pixel-font);
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  background-color: rgba(42, 45, 52, 0.9);
+  text-align: center;
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: rgba(42, 45, 52, 0.9);
@@ -399,6 +464,13 @@ footer a {
 footer a:hover {
   color: var(--white);
   text-decoration: underline;
+}
+
+footer .footer-credits {
+  font-family: var(--pixel-font);
+  font-size: 0.6rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .footer-divider {
@@ -444,6 +516,11 @@ footer a:hover {
   .gallery-item img {
     height: 180px;
   }
+
+  .profile-info .about-me,
+  .profile-quote {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -454,6 +531,10 @@ footer a:hover {
   .btn {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
+  }
+
+  .btn-pixel {
+    font-size: 0.65rem;
   }
 
   .social-links a {
