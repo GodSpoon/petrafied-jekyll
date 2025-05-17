@@ -255,65 +255,18 @@ img {
 /* Gallery slider specific styles */
 .gallery-slider {
   position: relative;
+  max-width: 500px;
   margin: 0 auto;
-  max-width: 700px;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  background: #222;
 }
 
 .gallery-slider .slide {
   display: none;
-  width: 100%;
-}
-
-.gallery-slider .slide.active {
-  display: block;
-}
-
-.gallery-slider img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-}
-
-/* Critical image and gallery styles for Petrafied.ink */
-
-/* Global image constraints */
-img {
-  max-width: 100%; 
-  height: auto;
-}
-
-/* Featured Work section styling */
-.featured-work {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background-color: rgba(42, 45, 52, 0.7);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid #9882d9;
-}
-
-.featured-work h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
-  color: #9882d9;
-}
-
-/* Gallery slider styling */
-.gallery-slider {
-  position: relative;
-  margin: 0 auto;
-  max-width: 700px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.gallery-slider .slide {
-  display: none;
-  width: 100%;
+  transition: opacity 0.5s;
 }
 
 .gallery-slider .slide.active {
@@ -321,12 +274,12 @@ img {
 }
 
 .gallery-slider img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: #181818;
 }
 
 .gallery-slider .prev,
@@ -334,27 +287,42 @@ img {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  color: #fff;
   font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 5px 5px 0;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: rgba(152, 130, 217, 0.7);
   user-select: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.gallery-slider .next {
-  right: 0;
-  border-radius: 5px 0 0 5px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
 }
 
 .gallery-slider .prev:hover,
 .gallery-slider .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: #9882d9;
+}
+
+.gallery-slider .prev {
+  left: 10px;
+}
+
+.gallery-slider .next {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .gallery-slider {
+    max-width: 98vw;
+  }
+  .gallery-slider img {
+    max-height: 180px;
+  }
 }
 
 /* Profile card styling */

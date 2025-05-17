@@ -17,44 +17,10 @@
     <div class="slide">
       <img src="{{ site.baseurl }}/assets/images/portfolio/portfolio_20.jpg" alt="Tattoo work by Petra">
     </div>
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <a class="prev" data-action="prev">&#10094;</a>
+    <a class="next" data-action="next">&#10095;</a>
   </div>
   <p class="text-center mt-4">
     <a href="{{ site.baseurl }}/portfolio" class="btn btn-primary">See Full Portfolio</a>
   </p>
 </div>
-
-<script>
-  let slideIndex = 0;
-
-  // Auto-advance slides
-  function showSlides() {
-    changeSlide(1);
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
-  }
-
-  function changeSlide(n) {
-    const slides = document.querySelectorAll('.gallery-slider .slide');
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove('active');
-    }
-
-    // Update slide index
-    slideIndex += n;
-
-    // Loop back to first/last slide if needed
-    if (slideIndex >= slides.length) { slideIndex = 0; }
-    if (slideIndex < 0) { slideIndex = slides.length - 1; }
-
-    // Show the current slide
-    slides[slideIndex].classList.add('active');
-  }
-
-  // Start the slideshow when the page loads
-  document.addEventListener('DOMContentLoaded', function() {
-    showSlides();
-  });
-</script>

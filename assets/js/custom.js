@@ -1,4 +1,8 @@
-// Initialize gallery and position side GIFs
+// Core site functionality
+
+// Global variables
+let slideIndex = 0;
+let slideInterval;
 
 // Position side GIFs and add animation
 function positionSideGifs() {
@@ -26,13 +30,50 @@ function positionSideGifs() {
   });
 }
 
-// Initialize gallery as soon as possible
+// Gallery slider functions
+function showSlides() {
+  const slides = document.querySelectorAll('.gallery-slider .slide');
+  if (slides.length === 0) return;
+  
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[slideIndex].classList.add('active');
+}
+
+function changeSlide(n) {
+  const slides = document.querySelectorAll('.gallery-slider .slide');
+  if (slides.length === 0) return;
+  
+  slideIndex += n;
+  if (slideIndex >= slides.length) { slideIndex = 0; }
+  if (slideIndex < 0) { slideIndex = slides.length - 1; }
+  showSlides();
+}
+
+// Initialize gallery with auto-rotation
 function initializeGallery() {
   const slides = document.querySelectorAll('.gallery-slider .slide');
-  if (slides.length > 0) {
-    // Make sure the first slide is active
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[0].classList.add('active');
+  if (slides.length === 0) return;
+  
+  // Initialize first slide
+  slideIndex = 0;
+  showSlides();
+  
+  // Set up auto-rotation
+  if (slideInterval) clearInterval(slideInterval);
+  slideInterval = setInterval(function() { changeSlide(1); }, 5000);
+  
+  // Add click handlers for controls if they don't have them
+  const prevButton = document.querySelector('.gallery-slider .prev');
+  const nextButton = document.querySelector('.gallery-slider .next');
+  
+  if (prevButton && !prevButton.hasAttribute('data-initialized')) {
+    prevButton.setAttribute('data-initialized', 'true');
+    prevButton.addEventListener('click', function() { changeSlide(-1); });
+  }
+  
+  if (nextButton && !nextButton.hasAttribute('data-initialized')) {
+    nextButton.setAttribute('data-initialized', 'true');
+    nextButton.addEventListener('click', function() { changeSlide(1); });
   }
 }
 

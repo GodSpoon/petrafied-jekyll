@@ -2,6 +2,10 @@
 
 <!-- Custom fonts -->
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<!-- Google Fonts - Pixelify Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
@@ -13,9 +17,14 @@
 
 <!-- Custom JavaScript -->
 <script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/font-switcher.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/gif-loader.js' | relative_url }}" defer></script>
 
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/font-switcher.css' | relative_url }}">
 
 <!-- Meta tags for mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,8 +64,48 @@
   }
   
   @font-face {
-    font-family: 'Fredoka-Bold';
-    src: url('{{ site.baseurl }}/assets/fonts/Fredoka-Bold.ttf') format('truetype');
+    font-family: 'RoomachRegular';
+    src: url('{{ site.baseurl }}/assets/fonts/RoomachRegular-6Rpx6.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Fredoka';
+    src: url('{{ site.baseurl }}/assets/fonts/Fredoka-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Stylish';
+    src: url('{{ site.baseurl }}/assets/fonts/Stylish-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('{{ site.baseurl }}/assets/fonts/open-sans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('{{ site.baseurl }}/assets/fonts/open-sans-600.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Antina Bold';
+    src: url('{{ site.baseurl }}/assets/fonts/metal/Antina Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

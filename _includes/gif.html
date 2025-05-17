@@ -1,0 +1,27 @@
+{% comment %}
+  A helper for loading GIFs from their organized directories.
+  
+  Parameters:
+  - name: The filename of the GIF (required)
+  - category: The preferred category to load from (optional)
+  - alt: Alt text for the GIF (optional)
+  - class: CSS classes to apply (optional)
+  - style: Inline styles to apply (optional)
+{% endcomment %}
+
+{% assign default_alt = "Decorative GIF" %}
+{% assign gif_path = site.baseurl | append: "/assets/images/gifs/" | append: include.name %}
+
+{% capture gif_html %}
+<img 
+  src="{{ gif_path }}" 
+  alt="{{ include.alt | default: default_alt }}"
+  class="{{ include.class }}"
+  {% if include.style %}style="{{ include.style }}"{% endif %}
+  data-gif-name="{{ include.name }}"
+  data-preferred-category="{{ include.category | default: '' }}"
+  onload="this.src = getGifPath(this.dataset.gifName, this.dataset.preferredCategory) || this.src"
+/>
+{% endcapture %}
+
+{{ gif_html | strip_newlines | strip }}

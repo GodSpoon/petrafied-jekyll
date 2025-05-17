@@ -1,0 +1,131 @@
+/* Font Switcher Styles for Petrafied.ink */
+
+/* Font classes */
+.font-roomach {
+  --title-font: 'RoomachRegular', 'BuilderSans', sans-serif;
+}
+
+.font-builder-sans {
+  --title-font: 'BuilderSans-Medium', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-open-sans {
+  --title-font: 'Open Sans', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+.font-fredoka {
+  --title-font: 'Fredoka', sans-serif;
+  --body-font: 'Fredoka', sans-serif;
+}
+
+.font-stylish {
+  --title-font: 'Stylish', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-pixelify {
+  --title-font: 'Pixelify Sans', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina {
+  --title-font: 'Antina Bold', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+/* Font switcher container */
+.font-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(42, 45, 52, 0.85);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #9882d9;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(152, 130, 217, 0.5);
+  transition: all 0.3s ease;
+  max-width: 250px;
+}
+
+.font-switcher.collapsed {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.font-switcher-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #9882d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.font-switcher-toggle:hover {
+  background-color: #7a67b8;
+}
+
+.font-switcher h4 {
+  color: #9882d9;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+
+.font-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.font-option {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.font-option:hover {
+  background-color: rgba(152, 130, 217, 0.2);
+}
+
+.font-option.active {
+  background-color: rgba(152, 130, 217, 0.3);
+  border-left: 3px solid #9882d9;
+}
+
+.font-preview {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #9882d9;
+}
+
+/* Apply the selected fonts */
+body {
+  font-family: var(--body-font, 'BuilderSans-Light', sans-serif);
+}
+
+h1, h2.subtitle, .intro-header h1, .page-heading h1, 
+.welcome-section h2, .navbar-brand, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font, 'RoomachRegular', 'BuilderSans', sans-serif);
+}

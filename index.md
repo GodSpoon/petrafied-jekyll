@@ -68,7 +68,7 @@ subtitle: Tattoo Artist | Fort Wayne, Indiana
         </ul>
         
         <div class="mt-3">
-          <img src="{{ site.baseurl }}/assets/images/gifs/heartfelt.gif" alt="Heart" class="img-fluid" style="max-width: 100px;">
+          {% include gif.html name="heartfelt.gif" category="animated" alt="Heart" class="img-fluid" style="max-width: 100px;" %}
         </div>
       </div>
     </div>
@@ -77,8 +77,8 @@ subtitle: Tattoo Artist | Fort Wayne, Indiana
 
 <!-- Side GIFs -->
 <div class="side-gif side-gif-left">
-  <img src="{{ site.baseurl }}/assets/images/gifs/computer_65.gif" alt="Computer" width="100">
+  {% include gif.html name="computer_65.gif" category="animated" alt="Computer" style="width: 100px;" %}
 </div>
 <div class="side-gif side-gif-right">
-  <img src="{{ site.baseurl }}/assets/images/gifs/star109.gif" alt="Star" width="100">
+  {% include gif.html name="star109.gif" category="animated" alt="Star" style="width: 100px;" %}
 </div>

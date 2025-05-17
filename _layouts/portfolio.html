@@ -7,9 +7,10 @@ layout: page
 <div class="portfolio-gallery">
   {% for i in (1..178) %}
     {% capture image_path %}{{ site.baseurl }}/assets/images/portfolio/portfolio_{{ i }}.jpg{% endcapture %}
+    {% capture thumb_path %}{{ site.baseurl }}/assets/images/portfolio/portfolio_{{ i }}_thumb.jpg{% endcapture %}
     <div class="gallery-item">
       <a href="{{ image_path }}" data-lightbox="portfolio" data-title="Tattoo by Petra">
-        <img src="{{ image_path }}" alt="Tattoo by Petra" loading="lazy">
+        <img src="{{ thumb_path }}" alt="Tattoo by Petra" loading="lazy" onerror="this.onerror=null;this.src='{{ image_path }}';">
       </a>
     </div>
   {% endfor %}
