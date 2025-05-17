@@ -1,15 +1,20 @@
 <!-- Custom navigation for Petrafied.ink -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/images/petrafiedlogo_transparent_wht.png" alt="Petrafied Ink" height="70" class="d-inline-block align-top me-2">
-      Petrafied Ink
-    </a>
+  <div class="container position-relative">
+    <!-- Toggler for mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMain">
-      <ul class="navbar-nav ms-auto">
+
+    <!-- Centered logo/title -->
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle d-flex align-items-center" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/images/petrafiedlogo_transparent_wht.png" alt="Petrafied Ink" height="70" class="d-inline-block me-2">
+      <span class="d-none d-sm-inline">Petrafied Ink</span>
+    </a>
+
+    <!-- Navigation items on the right -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">
             <i class="fa fa-home"></i> Home
