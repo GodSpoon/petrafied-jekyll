@@ -1,44 +1,29 @@
 <!-- Custom navigation for Petrafied.ink -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container position-relative">
-    <!-- Toggler for mobile -->
+  <div class="container">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/images/heart_favicon.png" alt="Petrafied Ink" class="d-inline-block align-middle">
+      Petrafied Ink
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Centered logo/title -->
-    <a class="navbar-brand position-absolute top-50 start-50 translate-middle d-flex align-items-center" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/images/petrafiedlogo_transparent_wht.png" alt="Petrafied Ink" height="70" class="d-inline-block me-2">
-      <span class="d-none d-sm-inline">Petrafied Ink</span>
-    </a>
-
-    <!-- Navigation items on the right -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">
-            <i class="fa fa-home"></i> Home
-          </a>
+          <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/portfolio' %}active{% endif %}" href="{{ site.baseurl }}/portfolio">
-            <i class="fa fa-image"></i> Portfolio
-          </a>
+          <a class="nav-link" href="{{ site.baseurl }}/portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/about' %}active{% endif %}" href="{{ site.baseurl }}/about">
-            <i class="fa fa-user"></i> About
-          </a>
+          <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/booking' %}active{% endif %}" href="{{ site.baseurl }}/booking">
-            <i class="fa fa-calendar"></i> Booking
-          </a>
+          <a class="nav-link" href="{{ site.baseurl }}/booking">Booking</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://tally.so/r/3yYpJ0" target="_blank">
-            <i class="fa fa-pencil-square-o"></i> Appointment
-          </a>
+          <a class="nav-link" href="https://tally.so/r/3yYpJ0" target="_blank">Appointment</a>
         </li>
       </ul>
     </div>
