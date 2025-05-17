@@ -20,7 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Get the base URL for assets
-  const baseUrl = document.querySelector('meta[name="base-url"]')?.content || '';
+  let baseUrl = document.querySelector('meta[name="base-url"]')?.content || '';
+  
+  // Ensure baseUrl doesn't end with a slash when we need to append one
+  if (baseUrl && baseUrl.endsWith('/')) {
+    baseUrl = baseUrl.slice(0, -1);
+  }
+  
+  // Add logging for debugging
+  console.log('SVG Background starting with base URL:', baseUrl || 'empty (using relative paths)');
   
   // SVG frame animation settings
   const settings = {
@@ -28,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
     framesToPreload: 24,        // Number of frames to preload (keep low for performance)
     frameStep: 14,              // Use every Nth frame to reduce load but maintain smoothness
     animationSpeed: prefersReducedMotion ? 500 : 180, // Slower for reduced motion preference
-    framesPath: `${baseUrl}/assets/images/backgrounds/bg-frames-svg/`,
+    // Ensure the path is constructed correctly regardless of baseUrl
+    framesPath: baseUrl ? `${baseUrl}/assets/images/backgrounds/bg-frames-svg/` : '/assets/images/backgrounds/bg-frames-svg/',
     pattern: 'frame-{num}.svg', // Pattern for frame filenames
     opacity: 0.25,              // Opacity of the animation (slightly increased)
     size: '400px',              // Size of each SVG pattern tile (increased for better visibility)
@@ -73,6 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
   let loadedCount = 0;
   let currentFrameIndex = 0;
   let isPaused = false;
+  let loadingTimeoutId = null;
+  
+  // Set a timeout for frame loading
+  loadingTimeoutId = setTimeout(() => {
+    if (loadedCount === 0) {
+      console.warn('No frames loaded after timeout, using fallback');
+      useFallbackAnimation();
+    }
+  }, 5000); // 5 second timeout
   
   // Handle tab visibility changes to save resources
   document.addEventListener('visibilitychange', function() {
@@ -115,10 +133,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const frameNum = i.toString().padStart(3, '0');
     const framePath = `${settings.framesPath}${settings.pattern.replace('{num}', frameNum)}`;
     
+    console.log('Attempting to load frame:', framePath);
+    
     // Create image element to preload
     const img = new Image();
     img.onload = function() {
       loadedCount++;
+      console.log(`Frame loaded (${loadedCount}/${preloadedFrames.length}):`, framePath);
+      
       // Mark this frame as successfully loaded
       const frameIndex = preloadedFrames.findIndex(frame => frame.path === framePath);
       if (frameIndex !== -1) {
@@ -137,6 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     img.onerror = function() {
       console.error(`Failed to load frame: ${framePath}`);
+      // Log the full URL for debugging
+      console.error('Full attempted URL:', window.location.origin + framePath);
+      
       // Still count as loaded to not block animation
       loadedCount++;
       // Mark this frame as failed to load
@@ -148,6 +173,14 @@ document.addEventListener('DOMContentLoaded', function() {
       if (loadedCount === preloadedFrames.length) {
         // Check if we have at least some frames loaded
         const loadedFrames = preloadedFrames.filter(frame => frame.loaded);
+        console.log('Frames loaded:', loadedFrames.length, 'of', preloadedFrames.length);
+        
+        // Clear the loading timeout since we've completed loading
+        if (loadingTimeoutId) {
+          clearTimeout(loadingTimeoutId);
+          loadingTimeoutId = null;
+        }
+        
         if (loadedFrames.length > 0) {
           startAnimation();
         } else {
@@ -270,8 +303,31 @@ document.addEventListener('DOMContentLoaded', function() {
       secondContainer = null;
     }
     
+    // Determine fallback image path with more reliable URL construction
+    let fallbackPath;
+    
+    if (baseUrl) {
+      fallbackPath = `${baseUrl}/assets/images/backgrounds/cycles.gif`;
+    } else {
+      fallbackPath = '/assets/images/backgrounds/cycles.gif';
+    }
+    
+    console.log('Using fallback GIF at:', fallbackPath);
+    
+    // Test if the fallback image exists
+    const testImage = new Image();
+    testImage.onload = function() {
+      console.log('Fallback image loaded successfully');
+    };
+    testImage.onerror = function() {
+      console.error('Fallback image failed to load, trying root-relative URL');
+      fallbackPath = '/assets/images/backgrounds/cycles.gif';
+      console.log('New fallback path:', fallbackPath);
+    };
+    testImage.src = fallbackPath;
+    
     // Set fallback GIF as background
-    svgContainer.style.backgroundImage = `url(${baseUrl}/assets/images/backgrounds/cycles.gif)`;
+    svgContainer.style.backgroundImage = `url(${fallbackPath})`;
     svgContainer.style.backgroundSize = getBackgroundSizeForScreen();
     svgContainer.style.backgroundRepeat = 'repeat';
     svgContainer.style.backgroundPosition = 'center center';
@@ -284,13 +340,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Fallback if no frames load after timeout
-  setTimeout(() => {
-    if (loadedCount === 0) {
-      useFallbackAnimation();
-    }
-  }, 5000); // 5-second timeout
-  
   // Add debug function (can be accessed via console)
   window.svgBackgroundStats = () => {
     return {
@@ -298,12 +347,15 @@ document.addEventListener('DOMContentLoaded', function() {
       framesToPreload: settings.framesToPreload,
       loadedFrames: preloadedFrames.filter(frame => frame.loaded).length,
       failedFrames: preloadedFrames.filter(frame => !frame.loaded).length,
-      animationActive: loadedCount > 0,
+      animationActive: loadedCount > 0 && window.intervals && window.intervals.length > 0,
       usingFallback: loadedCount === 0 || preloadedFrames.filter(frame => frame.loaded).length === 0,
       frameStep: settings.frameStep,
       animationSpeed: settings.animationSpeed,
       crossFade: settings.crossFade,
-      reducedMotion: prefersReducedMotion
+      reducedMotion: prefersReducedMotion,
+      baseUrl: baseUrl,
+      framesPath: settings.framesPath,
+      timeoutActive: loadingTimeoutId !== null
     };
   };
   
