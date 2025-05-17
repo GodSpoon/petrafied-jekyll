@@ -18,30 +18,46 @@
 /* Base styles */
 body {
   font-family: 'BuilderSans', sans-serif;
-  background-color: #2a2d34;
+  background-color: #070809; /* Even darker background (almost black) */
   color: #fefcfd;
   cursor: url('../default_cursor.cur'), auto;
   position: relative;
 }
 
-body::before {
-  content: "";
+/* Animated background container */
+.animated-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url('../images/backgrounds/checkered.gif');
-  background-size: 300px; /* Larger size for less density */
-  background-repeat: repeat;
-  opacity: 0.1; /* Very subtle background */
-  animation: slowBgScroll 60s linear infinite; /* Slowed down animation */
+  pointer-events: none;
+  opacity: 0.2; /* Control the opacity of SVG animation */
 }
 
-@keyframes slowBgScroll {
-  0% { background-position: 0 0; }
-  100% { background-position: 300px 300px; }
+/* Fallback animation for browsers that don't support SVG SMIL animations */
+@supports not (animation-name: svg-anim) {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../images/backgrounds/cycles.gif');
+    background-size: 400px; /* Larger size for less density */
+    background-repeat: repeat;
+    background-attachment: fixed; /* Parallax effect */
+    opacity: 0.15; /* Very subtle background */
+    animation: slowBgScroll 600s linear infinite; /* 10% speed (60s → 600s) */
+  }
+  
+  @keyframes slowBgScroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 400px 400px; }
+  }
 }
 
 /* Text shadow for most text elements */
@@ -68,7 +84,7 @@ h2.subtitle, .intro-header h2.subtitle, .page-heading h2.subtitle {
 
 /* Navbar styles */
 .navbar {
-  background-color: rgba(42, 45, 52, 0.95);
+  background-color: rgba(17, 18, 20, 0.95);
   border-bottom: 2px solid #9882d9;
   padding: 0.5rem 1rem;
 }
@@ -117,7 +133,7 @@ h2.subtitle, .intro-header h2.subtitle, .page-heading h2.subtitle {
 
 /* Main content container */
 .main-content {
-  background-color: rgba(42, 45, 52, 0.8);
+  background-color: rgba(17, 18, 20, 0.8);
   padding: 2rem;
   border-radius: 10px;
   border: 1px solid #9882d9;
@@ -186,7 +202,7 @@ h2.subtitle, .intro-header h2.subtitle, .page-heading h2.subtitle {
 
 /* Footer styling */
 footer {
-  background-color: rgba(42, 45, 52, 0.95);
+  background-color: rgba(17, 18, 20, 0.95);
   border-top: 2px solid #9882d9;
   padding: 2rem 0;
   margin-top: 3rem;
@@ -327,7 +343,7 @@ img {
 
 /* Profile card styling */
 .profile-card {
-  background-color: rgba(42, 45, 52, 0.7);
+  background-color: rgba(17, 18, 20, 0.7);
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 2rem;

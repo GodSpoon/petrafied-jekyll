@@ -30,8 +30,179 @@
   --body-font: 'BuilderSans-Light', sans-serif;
 }
 
-.font-antina {
+/* Metal Font Classes */
+.font-antina-bold {
   --title-font: 'Antina Bold', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-extra-bold {
+  --title-font: 'Antina Extra Bold', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-extra-light {
+  --title-font: 'Antina Extra Light', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-heavy {
+  --title-font: 'Antina Heavy', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-light {
+  --title-font: 'Antina Light', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-regular {
+  --title-font: 'Antina Regular', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-antina-ultra {
+  --title-font: 'Antina Ultra', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-berosong {
+  --title-font: 'Berosong', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccflameon-nova {
+  --title-font: 'CCFlameOn Nova', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccflameon-plasma {
+  --title-font: 'CCFlameOn Plasma', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccflameon-regular {
+  --title-font: 'CCFlameOn Regular', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccmeltdown-open {
+  --title-font: 'CCMeltdown Open', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccmeltdown-regular {
+  --title-font: 'CCMeltdown Regular', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccprimalscream-fill {
+  --title-font: 'CCPrimalScream Fill', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccprimalscream-open {
+  --title-font: 'CCPrimalScream Open', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccprimalscream-outline {
+  --title-font: 'CCPrimalScream Outline', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-ccprimalscream-regular {
+  --title-font: 'CCPrimalScream Regular', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-graveblade {
+  --title-font: 'Graveblade', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-megasord {
+  --title-font: 'Megasord', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-metalmania {
+  --title-font: 'MetalMania', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-metalista-black {
+  --title-font: 'Metalista Black', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-metalista-death {
+  --title-font: 'Metalista Death', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-metalista-speed {
+  --title-font: 'Metalista Speed', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-redeyes {
+  --title-font: 'Redeyes', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-black {
+  --title-font: 'Shogun Black', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-blackextended {
+  --title-font: 'Shogun BlackExtended', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-bold {
+  --title-font: 'Shogun Bold', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-boldextended {
+  --title-font: 'Shogun BoldExtended', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-light {
+  --title-font: 'Shogun Light', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-shogun-lightextended {
+  --title-font: 'Shogun LightExtended', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-taurunum-ferrum-iron {
+  --title-font: 'Taurunum Ferrum Iron', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-taurunum-ferrum-steel {
+  --title-font: 'Taurunum Ferrum Steel', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-totallygothic-regular {
+  --title-font: 'TotallyGothic Regular', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-totallygothic-widecaps {
+  --title-font: 'TotallyGothic WideCaps', sans-serif;
+  --body-font: 'BuilderSans-Light', sans-serif;
+}
+
+.font-true-gore {
+  --title-font: 'True Gore', sans-serif;
   --body-font: 'BuilderSans-Light', sans-serif;
 }
 
@@ -40,7 +211,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgba(42, 45, 52, 0.85);
+  background-color: rgba(7, 8, 9, 0.85); /* Match new darker background */
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #9882d9;
@@ -48,6 +219,9 @@
   box-shadow: 0 0 15px rgba(152, 130, 217, 0.5);
   transition: all 0.3s ease;
   max-width: 250px;
+  max-height: 80vh; /* Limit height to 80% of viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 .font-switcher.collapsed {
@@ -78,17 +252,145 @@
   background-color: #7a67b8;
 }
 
-.font-switcher h4 {
-  color: #9882d9;
-  margin-top: 0;
+.font-switcher-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
   padding-right: 40px;
+}
+
+.font-switcher h4 {
+  color: #9882d9;
+  margin: 0;
+}
+
+.font-count {
+  color: #9882d9;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Search input styling */
+.font-search-container {
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.font-search-input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #9882d9;
+  background-color: rgba(7, 8, 9, 0.7); /* Match new darker background */
+  color: #fefcfd;
+  font-size: 14px;
+  padding-right: 25px; /* Make room for the clear button */
+}
+
+.clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9882d9;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.clear-search:hover {
+  opacity: 1;
+}
+
+.font-search-input:focus {
+  outline: none;
+  border-color: #7a67b8;
+  box-shadow: 0 0 5px rgba(152, 130, 217, 0.5);
+}
+
+/* Category buttons */
+.font-category-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.category-btn {
+  flex: 1;
+  padding: 4px 0;
+  border-radius: 5px;
+  border: 1px solid #9882d9;
+  background-color: rgba(7, 8, 9, 0.7); /* Match new darker background */
+  color: #fefcfd;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  background-color: rgba(152, 130, 217, 0.2);
+}
+
+.category-btn.active {
+  background-color: #9882d9;
+  color: #070809; /* Match new darker background */
+}
+
+/* Random font button */
+.random-font-btn {
+  width: 100%;
+  padding: 6px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #9882d9;
+  background-color: rgba(7, 8, 9, 0.7);
+  color: #fefcfd;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.random-font-btn:hover {
+  background-color: rgba(152, 130, 217, 0.4);
+  transform: translateY(-1px);
+}
+
+.random-font-btn:active {
+  transform: translateY(0);
 }
 
 .font-options {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  overflow-y: auto; /* Add scrolling */
+  max-height: calc(80vh - 140px); /* Allow space for the title, search, and toggle */
+  scrollbar-width: thin;
+  scrollbar-color: #9882d9 rgba(17, 18, 20, 0.5);
+  padding-right: 5px;
+}
+
+/* Custom scrollbar styling */
+.font-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.font-options::-webkit-scrollbar-track {
+  background: rgba(7, 8, 9, 0.5); /* Match new darker background */
+  border-radius: 10px;
+}
+
+.font-options::-webkit-scrollbar-thumb {
+  background-color: #9882d9;
+  border-radius: 10px;
 }
 
 .font-option {
@@ -109,6 +411,16 @@
   border-left: 3px solid #9882d9;
 }
 
+.font-option.highlight {
+  animation: pulse 1.5s ease;
+}
+
+@keyframes pulse {
+  0% { background-color: rgba(152, 130, 217, 0.1); }
+  50% { background-color: rgba(152, 130, 217, 0.5); }
+  100% { background-color: rgba(152, 130, 217, 0.1); }
+}
+
 .font-preview {
   width: 20px;
   height: 20px;
@@ -118,6 +430,48 @@
   justify-content: center;
   font-weight: bold;
   color: #9882d9;
+}
+
+/* Font switcher search */
+.font-search {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+}
+
+.font-search input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #9882d9;
+  border-radius: 5px;
+  background-color: rgba(17, 18, 20, 0.7);
+  color: #fefcfd;
+  font-size: 14px;
+}
+
+.font-search input:focus {
+  outline: none;
+  border-color: #7a67b8;
+  box-shadow: 0 0 5px rgba(152, 130, 217, 0.5);
+}
+
+.font-search input::placeholder {
+  color: rgba(254, 252, 253, 0.5);
+}
+
+.font-search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9882d9;
+  cursor: pointer;
+  font-size: 12px;
+  display: none;
+}
+
+.font-search-clear.visible {
+  display: block;
 }
 
 /* Apply the selected fonts */

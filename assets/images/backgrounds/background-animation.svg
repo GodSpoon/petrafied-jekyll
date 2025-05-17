@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+  <title>Animated Background</title>
+  <defs>
+    <!-- Define all the frames -->
+    <image id="frame000" width="200" height="200" href="bg-frames-svg/frame-000.svg"/>
+    <image id="frame001" width="200" height="200" href="bg-frames-svg/frame-001.svg"/>
+    <image id="frame002" width="200" height="200" href="bg-frames-svg/frame-002.svg"/>
+    <image id="frame003" width="200" height="200" href="bg-frames-svg/frame-003.svg"/>
+    <image id="frame004" width="200" height="200" href="bg-frames-svg/frame-004.svg"/>
+    <image id="frame005" width="200" height="200" href="bg-frames-svg/frame-005.svg"/>
+    <image id="frame006" width="200" height="200" href="bg-frames-svg/frame-006.svg"/>
+    <image id="frame007" width="200" height="200" href="bg-frames-svg/frame-007.svg"/>
+    <image id="frame008" width="200" height="200" href="bg-frames-svg/frame-008.svg"/>
+    <image id="frame009" width="200" height="200" href="bg-frames-svg/frame-009.svg"/>
+    
+    <!-- Continue including frames by increments of 10 for brevity -->
+    <image id="frame010" width="200" height="200" href="bg-frames-svg/frame-010.svg"/>
+    <image id="frame020" width="200" height="200" href="bg-frames-svg/frame-020.svg"/>
+    <image id="frame030" width="200" height="200" href="bg-frames-svg/frame-030.svg"/>
+    <image id="frame040" width="200" height="200" href="bg-frames-svg/frame-040.svg"/>
+    <image id="frame050" width="200" height="200" href="bg-frames-svg/frame-050.svg"/>
+    <image id="frame060" width="200" height="200" href="bg-frames-svg/frame-060.svg"/>
+    <image id="frame070" width="200" height="200" href="bg-frames-svg/frame-070.svg"/>
+    <image id="frame080" width="200" height="200" href="bg-frames-svg/frame-080.svg"/>
+    <image id="frame090" width="200" height="200" href="bg-frames-svg/frame-090.svg"/>
+    <image id="frame100" width="200" height="200" href="bg-frames-svg/frame-100.svg"/>
+    <image id="frame110" width="200" height="200" href="bg-frames-svg/frame-110.svg"/>
+    <image id="frame120" width="200" height="200" href="bg-frames-svg/frame-120.svg"/>
+    <image id="frame130" width="200" height="200" href="bg-frames-svg/frame-130.svg"/>
+    <image id="frame140" width="200" height="200" href="bg-frames-svg/frame-140.svg"/>
+    <image id="frame150" width="200" height="200" href="bg-frames-svg/frame-150.svg"/>
+    <image id="frame160" width="200" height="200" href="bg-frames-svg/frame-160.svg"/>
+    <image id="frame170" width="200" height="200" href="bg-frames-svg/frame-170.svg"/>
+    <image id="frame180" width="200" height="200" href="bg-frames-svg/frame-180.svg"/>
+    <image id="frame190" width="200" height="200" href="bg-frames-svg/frame-190.svg"/>
+    <image id="frame200" width="200" height="200" href="bg-frames-svg/frame-200.svg"/>
+    <image id="frame210" width="200" height="200" href="bg-frames-svg/frame-210.svg"/>
+    <image id="frame220" width="200" height="200" href="bg-frames-svg/frame-220.svg"/>
+    <image id="frame230" width="200" height="200" href="bg-frames-svg/frame-230.svg"/>
+    <image id="frame240" width="200" height="200" href="bg-frames-svg/frame-240.svg"/>
+    <image id="frame250" width="200" height="200" href="bg-frames-svg/frame-250.svg"/>
+    <image id="frame260" width="200" height="200" href="bg-frames-svg/frame-260.svg"/>
+    <image id="frame270" width="200" height="200" href="bg-frames-svg/frame-270.svg"/>
+    <image id="frame280" width="200" height="200" href="bg-frames-svg/frame-280.svg"/>
+    <image id="frame290" width="200" height="200" href="bg-frames-svg/frame-290.svg"/>
+    <image id="frame300" width="200" height="200" href="bg-frames-svg/frame-300.svg"/>
+    <image id="frame310" width="200" height="200" href="bg-frames-svg/frame-310.svg"/>
+    <image id="frame320" width="200" height="200" href="bg-frames-svg/frame-320.svg"/>
+    <image id="frame330" width="200" height="200" href="bg-frames-svg/frame-330.svg"/>
+  </defs>
+
+  <!-- Create pattern that will be repeated in the background -->
+  <pattern id="animatedPattern" patternUnits="userSpaceOnUse" width="200" height="200" patternTransform="scale(1.5)">
+    <image width="200" height="200" href="bg-frames-svg/frame-000.svg">
+      <!-- SMIL Animation to loop through all frames -->
+      <animate
+        attributeName="href"
+        values="
+          bg-frames-svg/frame-000.svg;bg-frames-svg/frame-001.svg;bg-frames-svg/frame-002.svg;
+          bg-frames-svg/frame-003.svg;bg-frames-svg/frame-004.svg;bg-frames-svg/frame-005.svg;
+          bg-frames-svg/frame-006.svg;bg-frames-svg/frame-007.svg;bg-frames-svg/frame-008.svg;
+          bg-frames-svg/frame-009.svg;bg-frames-svg/frame-010.svg;bg-frames-svg/frame-011.svg;
+          bg-frames-svg/frame-012.svg;bg-frames-svg/frame-013.svg;bg-frames-svg/frame-014.svg;
+          bg-frames-svg/frame-015.svg;bg-frames-svg/frame-016.svg;bg-frames-svg/frame-017.svg;
+          bg-frames-svg/frame-018.svg;bg-frames-svg/frame-019.svg;bg-frames-svg/frame-020.svg;
+          bg-frames-svg/frame-021.svg;bg-frames-svg/frame-022.svg;bg-frames-svg/frame-023.svg;
+          bg-frames-svg/frame-024.svg;bg-frames-svg/frame-025.svg;bg-frames-svg/frame-026.svg;
+          bg-frames-svg/frame-027.svg;bg-frames-svg/frame-028.svg;bg-frames-svg/frame-029.svg;
+          bg-frames-svg/frame-030.svg;bg-frames-svg/frame-031.svg;bg-frames-svg/frame-032.svg;
+          bg-frames-svg/frame-033.svg;bg-frames-svg/frame-034.svg;bg-frames-svg/frame-035.svg;
+          bg-frames-svg/frame-036.svg;bg-frames-svg/frame-037.svg;bg-frames-svg/frame-038.svg;
+          bg-frames-svg/frame-039.svg;bg-frames-svg/frame-040.svg;bg-frames-svg/frame-041.svg;
+          bg-frames-svg/frame-042.svg;bg-frames-svg/frame-043.svg;bg-frames-svg/frame-044.svg;
+          bg-frames-svg/frame-045.svg;bg-frames-svg/frame-046.svg;bg-frames-svg/frame-047.svg;
+          bg-frames-svg/frame-048.svg;bg-frames-svg/frame-049.svg;bg-frames-svg/frame-050.svg;
+          bg-frames-svg/frame-051.svg;bg-frames-svg/frame-052.svg;bg-frames-svg/frame-053.svg;
+          bg-frames-svg/frame-054.svg;bg-frames-svg/frame-055.svg;bg-frames-svg/frame-056.svg;
+          bg-frames-svg/frame-057.svg;bg-frames-svg/frame-058.svg;bg-frames-svg/frame-059.svg;
+          bg-frames-svg/frame-060.svg;bg-frames-svg/frame-061.svg;bg-frames-svg/frame-062.svg;
+          bg-frames-svg/frame-063.svg;bg-frames-svg/frame-064.svg;bg-frames-svg/frame-065.svg;
+          bg-frames-svg/frame-066.svg;bg-frames-svg/frame-067.svg;bg-frames-svg/frame-068.svg;
+          bg-frames-svg/frame-069.svg;bg-frames-svg/frame-070.svg;bg-frames-svg/frame-071.svg;
+          bg-frames-svg/frame-072.svg;bg-frames-svg/frame-073.svg;bg-frames-svg/frame-074.svg;
+          bg-frames-svg/frame-075.svg;bg-frames-svg/frame-076.svg;bg-frames-svg/frame-077.svg;
+          bg-frames-svg/frame-078.svg;bg-frames-svg/frame-079.svg;bg-frames-svg/frame-080.svg;
+          bg-frames-svg/frame-081.svg;bg-frames-svg/frame-082.svg;bg-frames-svg/frame-083.svg;
+          bg-frames-svg/frame-084.svg;bg-frames-svg/frame-085.svg;bg-frames-svg/frame-086.svg;
+          bg-frames-svg/frame-087.svg;bg-frames-svg/frame-088.svg;bg-frames-svg/frame-089.svg;
+          bg-frames-svg/frame-090.svg;bg-frames-svg/frame-091.svg;bg-frames-svg/frame-092.svg;
+          bg-frames-svg/frame-093.svg;bg-frames-svg/frame-094.svg;bg-frames-svg/frame-095.svg;
+          bg-frames-svg/frame-096.svg;bg-frames-svg/frame-097.svg;bg-frames-svg/frame-098.svg;
+          bg-frames-svg/frame-099.svg;bg-frames-svg/frame-100.svg;
+          bg-frames-svg/frame-101.svg;bg-frames-svg/frame-102.svg;bg-frames-svg/frame-103.svg;
+          bg-frames-svg/frame-104.svg;bg-frames-svg/frame-105.svg;bg-frames-svg/frame-106.svg;
+          bg-frames-svg/frame-107.svg;bg-frames-svg/frame-108.svg;bg-frames-svg/frame-109.svg;
+          bg-frames-svg/frame-110.svg;bg-frames-svg/frame-111.svg;bg-frames-svg/frame-112.svg;
+          bg-frames-svg/frame-113.svg;bg-frames-svg/frame-114.svg;bg-frames-svg/frame-115.svg;
+          bg-frames-svg/frame-116.svg;bg-frames-svg/frame-117.svg;bg-frames-svg/frame-118.svg;
+          bg-frames-svg/frame-119.svg;bg-frames-svg/frame-120.svg;bg-frames-svg/frame-121.svg;
+          bg-frames-svg/frame-122.svg;bg-frames-svg/frame-123.svg;bg-frames-svg/frame-124.svg;
+          bg-frames-svg/frame-125.svg;bg-frames-svg/frame-126.svg;bg-frames-svg/frame-127.svg;
+          bg-frames-svg/frame-128.svg;bg-frames-svg/frame-129.svg;bg-frames-svg/frame-130.svg;
+          bg-frames-svg/frame-131.svg;bg-frames-svg/frame-132.svg;bg-frames-svg/frame-133.svg;
+          bg-frames-svg/frame-134.svg;bg-frames-svg/frame-135.svg;bg-frames-svg/frame-136.svg;
+          bg-frames-svg/frame-137.svg;bg-frames-svg/frame-138.svg;bg-frames-svg/frame-139.svg;
+          bg-frames-svg/frame-140.svg;bg-frames-svg/frame-141.svg;bg-frames-svg/frame-142.svg;
+          bg-frames-svg/frame-143.svg;bg-frames-svg/frame-144.svg;bg-frames-svg/frame-145.svg;
+          bg-frames-svg/frame-146.svg;bg-frames-svg/frame-147.svg;bg-frames-svg/frame-148.svg;
+          bg-frames-svg/frame-149.svg;bg-frames-svg/frame-150.svg;bg-frames-svg/frame-151.svg;
+          bg-frames-svg/frame-152.svg;bg-frames-svg/frame-153.svg;bg-frames-svg/frame-154.svg;
+          bg-frames-svg/frame-155.svg;bg-frames-svg/frame-156.svg;bg-frames-svg/frame-157.svg;
+          bg-frames-svg/frame-158.svg;bg-frames-svg/frame-159.svg;bg-frames-svg/frame-160.svg;
+          bg-frames-svg/frame-161.svg;bg-frames-svg/frame-162.svg;bg-frames-svg/frame-163.svg;
+          bg-frames-svg/frame-164.svg;bg-frames-svg/frame-165.svg;bg-frames-svg/frame-166.svg;
+          bg-frames-svg/frame-167.svg;bg-frames-svg/frame-168.svg;bg-frames-svg/frame-169.svg;
+          bg-frames-svg/frame-170.svg;bg-frames-svg/frame-171.svg;bg-frames-svg/frame-172.svg;
+          bg-frames-svg/frame-173.svg;bg-frames-svg/frame-174.svg;bg-frames-svg/frame-175.svg;
+          bg-frames-svg/frame-176.svg;bg-frames-svg/frame-177.svg;bg-frames-svg/frame-178.svg;
+          bg-frames-svg/frame-179.svg;bg-frames-svg/frame-180.svg;bg-frames-svg/frame-181.svg;
+          bg-frames-svg/frame-182.svg;bg-frames-svg/frame-183.svg;bg-frames-svg/frame-184.svg;
+          bg-frames-svg/frame-185.svg;bg-frames-svg/frame-186.svg;bg-frames-svg/frame-187.svg;
+          bg-frames-svg/frame-188.svg;bg-frames-svg/frame-189.svg;bg-frames-svg/frame-190.svg;
+          bg-frames-svg/frame-191.svg;bg-frames-svg/frame-192.svg;bg-frames-svg/frame-193.svg;
+          bg-frames-svg/frame-194.svg;bg-frames-svg/frame-195.svg;bg-frames-svg/frame-196.svg;
+          bg-frames-svg/frame-197.svg;bg-frames-svg/frame-198.svg;bg-frames-svg/frame-199.svg;
+          bg-frames-svg/frame-200.svg;bg-frames-svg/frame-201.svg;bg-frames-svg/frame-202.svg;
+          bg-frames-svg/frame-203.svg;bg-frames-svg/frame-204.svg;bg-frames-svg/frame-205.svg;
+          bg-frames-svg/frame-206.svg;bg-frames-svg/frame-207.svg;bg-frames-svg/frame-208.svg;
+          bg-frames-svg/frame-209.svg;bg-frames-svg/frame-210.svg;bg-frames-svg/frame-211.svg;
+          bg-frames-svg/frame-212.svg;bg-frames-svg/frame-213.svg;bg-frames-svg/frame-214.svg;
+          bg-frames-svg/frame-215.svg;bg-frames-svg/frame-216.svg;bg-frames-svg/frame-217.svg;
+          bg-frames-svg/frame-218.svg;bg-frames-svg/frame-219.svg;bg-frames-svg/frame-220.svg;
+          bg-frames-svg/frame-221.svg;bg-frames-svg/frame-222.svg;bg-frames-svg/frame-223.svg;
+          bg-frames-svg/frame-224.svg;bg-frames-svg/frame-225.svg;bg-frames-svg/frame-226.svg;
+          bg-frames-svg/frame-227.svg;bg-frames-svg/frame-228.svg;bg-frames-svg/frame-229.svg;
+          bg-frames-svg/frame-230.svg;bg-frames-svg/frame-231.svg;bg-frames-svg/frame-232.svg;
+          bg-frames-svg/frame-233.svg;bg-frames-svg/frame-234.svg;bg-frames-svg/frame-235.svg;
+          bg-frames-svg/frame-236.svg;bg-frames-svg/frame-237.svg;bg-frames-svg/frame-238.svg;
+          bg-frames-svg/frame-239.svg;bg-frames-svg/frame-240.svg;bg-frames-svg/frame-241.svg;
+          bg-frames-svg/frame-242.svg;bg-frames-svg/frame-243.svg;bg-frames-svg/frame-244.svg;
+          bg-frames-svg/frame-245.svg;bg-frames-svg/frame-246.svg;bg-frames-svg/frame-247.svg;
+          bg-frames-svg/frame-248.svg;bg-frames-svg/frame-249.svg;bg-frames-svg/frame-250.svg;
+          bg-frames-svg/frame-251.svg;bg-frames-svg/frame-252.svg;bg-frames-svg/frame-253.svg;
+          bg-frames-svg/frame-254.svg;bg-frames-svg/frame-255.svg;bg-frames-svg/frame-256.svg;
+          bg-frames-svg/frame-257.svg;bg-frames-svg/frame-258.svg;bg-frames-svg/frame-259.svg;
+          bg-frames-svg/frame-260.svg;bg-frames-svg/frame-261.svg;bg-frames-svg/frame-262.svg;
+          bg-frames-svg/frame-263.svg;bg-frames-svg/frame-264.svg;bg-frames-svg/frame-265.svg;
+          bg-frames-svg/frame-266.svg;bg-frames-svg/frame-267.svg;bg-frames-svg/frame-268.svg;
+          bg-frames-svg/frame-269.svg;bg-frames-svg/frame-270.svg;bg-frames-svg/frame-271.svg;
+          bg-frames-svg/frame-272.svg;bg-frames-svg/frame-273.svg;bg-frames-svg/frame-274.svg;
+          bg-frames-svg/frame-275.svg;bg-frames-svg/frame-276.svg;bg-frames-svg/frame-277.svg;
+          bg-frames-svg/frame-278.svg;bg-frames-svg/frame-279.svg;bg-frames-svg/frame-280.svg;
+          bg-frames-svg/frame-281.svg;bg-frames-svg/frame-282.svg;bg-frames-svg/frame-283.svg;
+          bg-frames-svg/frame-284.svg;bg-frames-svg/frame-285.svg;bg-frames-svg/frame-286.svg;
+          bg-frames-svg/frame-287.svg;bg-frames-svg/frame-288.svg;bg-frames-svg/frame-289.svg;
+          bg-frames-svg/frame-290.svg;bg-frames-svg/frame-291.svg;bg-frames-svg/frame-292.svg;
+          bg-frames-svg/frame-293.svg;bg-frames-svg/frame-294.svg;bg-frames-svg/frame-295.svg;
+          bg-frames-svg/frame-296.svg;bg-frames-svg/frame-297.svg;bg-frames-svg/frame-298.svg;
+          bg-frames-svg/frame-299.svg;bg-frames-svg/frame-300.svg;bg-frames-svg/frame-301.svg;
+          bg-frames-svg/frame-302.svg;bg-frames-svg/frame-303.svg;bg-frames-svg/frame-304.svg;
+          bg-frames-svg/frame-305.svg;bg-frames-svg/frame-306.svg;bg-frames-svg/frame-307.svg;
+          bg-frames-svg/frame-308.svg;bg-frames-svg/frame-309.svg;bg-frames-svg/frame-310.svg;
+          bg-frames-svg/frame-311.svg;bg-frames-svg/frame-312.svg;bg-frames-svg/frame-313.svg;
+          bg-frames-svg/frame-314.svg;bg-frames-svg/frame-315.svg;bg-frames-svg/frame-316.svg;
+          bg-frames-svg/frame-317.svg;bg-frames-svg/frame-318.svg;bg-frames-svg/frame-319.svg;
+          bg-frames-svg/frame-320.svg;bg-frames-svg/frame-321.svg;bg-frames-svg/frame-322.svg;
+          bg-frames-svg/frame-323.svg;bg-frames-svg/frame-324.svg;bg-frames-svg/frame-325.svg;
+          bg-frames-svg/frame-326.svg;bg-frames-svg/frame-327.svg;bg-frames-svg/frame-328.svg;
+          bg-frames-svg/frame-329.svg;bg-frames-svg/frame-330.svg;bg-frames-svg/frame-331.svg;
+          bg-frames-svg/frame-332.svg;bg-frames-svg/frame-333.svg;bg-frames-svg/frame-334.svg;
+          bg-frames-svg/frame-335.svg"
+        dur="20s"
+        repeatCount="indefinite"
+      />
+    </image>
+  </pattern>
+
+  <!-- Apply the animated pattern to fill the entire SVG area -->
+  <rect width="100%" height="100%" fill="url(#animatedPattern)" opacity="0.2" />
+</svg>
