@@ -9,6 +9,7 @@ gem "webrick", "~> 1.7"
 gem "jekyll-sass-converter", "~> 3.0"
 
 # Required by Ruby 3.4.0+
+gem "erb"  # Added missing ERB gem
 gem "csv"
 gem "logger"
 gem "bigdecimal"

@@ -49,3 +49,12 @@ shop_location: Fort Wayne, Indiana
 shop_map: https://maps.app.goo.gl/APDiCzUPpAnmppW98
 shop_instagram: thepaintedladyfw
 important_website: https://cat-bounce.com/
+
+# Sass processing settings
+sass:
+  style: compressed  # Options: nested, expanded, compact, compressed
+  sass_dir: _sass    # Directory containing Sass partials
+  load_paths:        # Additional load paths for Sass
+    - _sass
+    - assets/css
+  sourcemap: never   # Options: always, never

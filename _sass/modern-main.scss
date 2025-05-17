@@ -1,0 +1,38 @@
+/* Main SCSS file for Petrafied.ink using modern Sass module system */
+
+// Import color module to use modern color functions
+@use "sass:color";
+
+// Define variables
+$base-font-family: "BuilderSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$heading-font-family: "RoomachRegular", "BuilderSans", sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+// Brand colors
+$tropical-indigo: #9882d9 !default;
+$gunmetal: #2a2d34 !default;
+$white: #fefcfd !default;
+
+// Assign colors to functional variables
+$text-color:       $white !default;
+$background-color: $gunmetal !default;
+$brand-color:      $tropical-indigo !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%) !default;
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Forward our variables for use in other modules
+@forward "sass:color";
+
+// No import statements here - we use the _index.scss file to organize imports
