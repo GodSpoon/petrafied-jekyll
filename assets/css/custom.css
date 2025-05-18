@@ -24,7 +24,12 @@ body {
   position: relative;
 }
 
-/* Animated background container */
+/* Hide the stars-background div since we're using the canvas directly */
+.stars-background {
+  display: none;
+}
+
+/* Animated background container - kept for backwards compatibility */
 .animated-background {
   position: fixed;
   top: 0;

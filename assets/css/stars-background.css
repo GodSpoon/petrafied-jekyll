@@ -1,0 +1,25 @@
+/* stars-background.css is deprecated in favor of drifter-stars.css */
+/* This file is kept for backwards compatibility */
+
+/* Stars background styling - redirects to drifter-stars */
+.stars-background {
+  display: none;
+}
+
+/* Ensure the canvas keeps proper positioning */
+#stars {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  pointer-events: none;
+  opacity: 0.75; /* Adjust opacity to ensure visibility of content */
+}
+
+/* Override existing animated background with lower z-index */
+.animated-background {
+  z-index: -11;
+}
